@@ -35,12 +35,22 @@ export default function Hero() {
 
         {/* Real ERP Screenshot Asset */}
         <div className="mx-auto max-w-5xl rounded-xl border border-[#e7e7e4] bg-white p-2 shadow-xl shadow-black/[0.03]">
-          <div className="overflow-hidden rounded-lg border border-[#e7e7e4] bg-[#f7f7f5]">
+          <div className="overflow-hidden rounded-lg border border-[#e7e7e4] bg-[#fcfcfb]">
+            
+            {/* macOS Window Header */}
+            <div className="flex items-center gap-2 border-b border-[#e7e7e4] bg-white px-4 py-3">
+              <div className="h-2.5 w-2.5 rounded-full bg-[#ff5f56]"></div>
+              <div className="h-2.5 w-2.5 rounded-full bg-[#ffbd2e]"></div>
+              <div className="h-2.5 w-2.5 rounded-full bg-[#27c93f]"></div>
+            </div>
+
+            {/* Dashboard Image */}
             <img
               src="/dashboard.png" 
               alt="Ovelah ERP Dashboard Interface"
-              className="h-auto w-full block"
+              className="h-auto w-full block bg-[#f7f7f5]"
             />
+            
           </div>
         </div>
       </Container>
