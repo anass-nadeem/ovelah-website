@@ -26,12 +26,12 @@ export default function Navbar() {
 
           {/* Navbar CTA */}
           <div>
-            <a
-              href="mailto:contact@ovelah.com?subject=Request%20a%20Demo%20–%20Ovelah%20ERP"
+            <Link
+              href="/contact"
               className="rounded-md bg-[#0b1f3a] px-4 py-2 text-sm font-semibold text-white transition-all hover:bg-[#0b1f3a]/90"
             >
               Request a Demo
-            </a>
+            </Link>
           </div>
         </div>
       </Container>

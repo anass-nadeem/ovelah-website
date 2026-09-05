@@ -24,12 +24,12 @@ export default function Hero() {
             >
               Explore Ovelah ERP
             </Link>
-            <a
-              href="mailto:contact@ovelah.com?subject=Request%20a%20Demo%20–%20Ovelah%20ERP"
+            <Link
+              href="/contact"
               className="w-full sm:w-auto rounded-md border border-[#e7e7e4] bg-white px-7 py-3.5 text-sm font-semibold text-[#0a0a0a] transition-all hover:border-[#0b1f3a] hover:text-[#0b1f3a]"
             >
               Request a Demo
-            </a>
+            </Link>
           </div>
         </div>
 

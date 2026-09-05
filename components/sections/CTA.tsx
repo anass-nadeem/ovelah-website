@@ -1,4 +1,5 @@
 import Container from "../ui/Container";
+import Link from "next/link";
 
 export default function CTA() {
   return (
@@ -11,12 +12,12 @@ export default function CTA() {
           <p className="mb-8 text-base text-white/80 leading-relaxed">
             Tell us how your business manages jobs, quotations and invoices today. We'll show you how Ovelah can bring them together.
           </p>
-          <a
-            href="mailto:contact@ovelah.com?subject=Request%20a%20Demo%20–%20Ovelah%20ERP"
+          <Link
+            href="/contact"
             className="inline-block rounded-md bg-white px-7 py-3.5 text-sm font-semibold tracking-wide text-[#0b1f3a] transition-all hover:bg-gray-100 shadow-lg"
           >
             Request a Demo
-          </a>
+          </Link>
         </div>
       </Container>
     </section>
