@@ -26,7 +26,7 @@ export default function ActiveClients() {
             </h3>
             
             <p className="max-w-2xl text-sm leading-relaxed text-[#6b6b6b] md:text-base">
-              Infinity Engineering Solutions uses Ovelah to manage jobs, quotations, invoicing, expenses, assets, credit, and balances across its maintenance operations.
+              Infinity Engineering Solutions, a HVAC maintenance services provider operating across KFC Pakistan North locations,  uses Ovelah to manage jobs, quotations, invoicing, expenses, assets, credit and balance across its maintenance operations.
             </p>
           </div>
         </div>
