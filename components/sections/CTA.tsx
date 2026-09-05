@@ -1,23 +1,22 @@
-import Link from "next/link";
 import Container from "../ui/Container";
 
 export default function CTA() {
   return (
-    <section className="bg-[#0b1f3a] py-24 md:py-32">
+    <section id="contact" className="bg-[#0b1f3a] py-20 md:py-28">
       <Container>
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="mb-6 text-3xl font-semibold tracking-[-0.04em] text-white md:text-5xl">
-            Ready to streamline your business?
+          <h2 className="mb-4 text-3xl font-semibold tracking-[-0.04em] text-white md:text-4xl">
+            See how Ovelah fits your workflow.
           </h2>
-          <p className="mb-10 text-lg text-white/80">
-            Stop wrestling with fragmented spreadsheets and scattered data. Get in touch today to see how Ovelah can transform your daily operations.
+          <p className="mb-8 text-base text-white/80 leading-relaxed">
+            Tell us how your business manages jobs, quotations and invoices today. We'll show you how Ovelah can bring them together.
           </p>
-          <Link
-            href="/contact"
-            className="inline-block rounded-md bg-white px-8 py-4 text-sm font-semibold tracking-wide text-[#0b1f3a] transition-all hover:scale-[1.02] hover:bg-gray-100 shadow-lg"
+          <a
+            href="mailto:contact@ovelah.com?subject=Request%20a%20Demo%20–%20Ovelah%20ERP"
+            className="inline-block rounded-md bg-white px-7 py-3.5 text-sm font-semibold tracking-wide text-[#0b1f3a] transition-all hover:bg-gray-100 shadow-lg"
           >
-            Contact Us
-          </Link>
+            Request a Demo
+          </a>
         </div>
       </Container>
     </section>

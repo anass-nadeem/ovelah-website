@@ -3,41 +3,37 @@ import Container from "../ui/Container";
 
 export default function Navbar() {
   return (
-    <header className="sticky top-0 z-50 border-b border-[#e7e7e4] bg-white/90 backdrop-blur-md">
+    <header className="sticky top-0 z-50 border-b border-[#e7e7e4]/80 bg-[#fcfcfb]/80 backdrop-blur-md">
       <Container>
-        <nav className="flex h-20 items-center justify-between">
-          
-          <Link href="/" className="flex items-center gap-3">
-            <div className="flex h-9 w-9 items-center justify-center rounded-full border-[1.5px] border-[#0a0a0a]">
-              <span className="text-sm font-semibold text-[#0a0a0a]">O</span>
-            </div>
-
-            <span className="text-base font-semibold tracking-[0.16em] text-[#0a0a0a]">
-              OVELAH
-            </span>
+        <div className="flex h-16 items-center justify-between">
+          {/* Brand Logo */}
+          <Link href="/" className="text-xl font-bold tracking-tight text-[#0a0a0a]">
+            Ovelah
           </Link>
 
-          <div className="flex items-center gap-7">
-            <a
-              href="#product"
-              className="hidden text-sm font-medium text-[#6b6b6b] transition hover:text-[#0a0a0a] md:block"
-            >
+          {/* Navigation Links */}
+          <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-[#6b6b6b]">
+            <Link href="#product" className="transition-colors hover:text-[#0b1f3a]">
               Product
-            </a>
-
-            <a
-              href="#about"
-              className="hidden text-sm font-medium text-[#6b6b6b] transition hover:text-[#0a0a0a] md:block"
-            >
+            </Link>
+            <Link href="#about" className="transition-colors hover:text-[#0b1f3a]">
               About
-            </a>
-
-            <a href="/contact" className="btn-primary">
+            </Link>
+            <Link href="#contact" className="transition-colors hover:text-[#0b1f3a]">
               Contact
+            </Link>
+          </nav>
+
+          {/* Navbar CTA */}
+          <div>
+            <a
+              href="mailto:contact@ovelah.com?subject=Request%20a%20Demo%20–%20Ovelah%20ERP"
+              className="rounded-md bg-[#0b1f3a] px-4 py-2 text-sm font-semibold text-white transition-all hover:bg-[#0b1f3a]/90"
+            >
+              Request a Demo
             </a>
           </div>
-
-        </nav>
+        </div>
       </Container>
     </header>
   );
