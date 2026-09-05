@@ -2,6 +2,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 
 import Hero from "@/components/sections/Hero";
+import ActiveClients from "@/components/sections/ActiveClients";
 import Product from "@/components/sections/Product";
 import Workflow from "@/components/sections/Workflow";
 import Industries from "@/components/sections/Industries";
@@ -16,6 +17,7 @@ export default function Home() {
 
       <main>
         <Hero />
+        <ActiveClients />
         <Product />
         <Workflow />
         <Industries />
