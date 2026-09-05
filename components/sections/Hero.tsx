@@ -35,13 +35,14 @@ export default function Hero() {
 
         {/* Real ERP Screenshot Asset */}
         <div className="mx-auto max-w-5xl rounded-xl border border-[#e7e7e4] bg-white p-2 shadow-xl shadow-black/[0.03]">
-          <div className="relative aspect-[16/10] w-full overflow-hidden rounded-lg bg-[#f7f7f5]">
+          <div className="overflow-hidden rounded-lg bg-[#f7f7f5] border border-[#e7e7e4]">
             <Image
               src="/dashboard.png" 
               alt="Ovelah ERP Dashboard Interface"
-              fill
+              width={1920}
+              height={1080}
               priority
-              className="object-cover object-top"
+              className="w-full h-auto"
             />
           </div>
         </div>
