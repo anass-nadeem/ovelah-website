@@ -1,15 +1,15 @@
+import Logo from "@/components/ui/Logo";
 import Link from "next/link";
-import Container from "../ui/Container";
+import Container from "@/components/ui/Container";
 
 export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-[#e7e7e4]/80 bg-[#fcfcfb]/80 backdrop-blur-md">
       <Container>
         <div className="flex h-16 items-center justify-between">
-          {/* Brand Logo */}
-          <Link href="/" className="text-xl font-bold tracking-tight text-[#0a0a0a]">
-            Ovelah
-          </Link>
+          
+          {/* Brand Logo Component */}
+          <Logo />
 
           {/* Navigation Links */}
           <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-[#6b6b6b]">
@@ -36,6 +36,7 @@ export default function Navbar() {
               Request a Demo
             </Link>
           </div>
+          
         </div>
       </Container>
     </header>
