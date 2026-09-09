@@ -24,7 +24,7 @@ export default function ActiveClients() {
             
             {/* Clean, Premium Typography (Removed the redundant H3 heading) */}
             <p className="max-w-2xl text-base leading-relaxed text-[#6b6b6b] md:text-lg md:leading-loose">
-              <span className="font-semibold text-[#0a0a0a]">Infinity Engineering Solutions</span> uses Ovelah to manage jobs, quotations, invoicing, expenses, assets, credit, and balances across its maintenance operations.
+              <span className="font-semibold text-[#0a0a0a]">Infinity Engineering Solutions</span> , a HVAC maintenance services provider operating across KFC Pakistan North locations,  uses Ovelah to manage jobs, quotations, invoicing, expenses, assets, credit and balance across its maintenance operations.
             </p>
             
           </div>
