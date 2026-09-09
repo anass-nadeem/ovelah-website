@@ -42,42 +42,71 @@ export default function ContactPage() {
           
           <div className="mx-auto max-w-2xl text-center">
             <p className="mb-6 text-xs font-bold tracking-[0.2em] text-[#0b1f3a]">
-              GET IN TOUCH
+              REQUEST A DEMO
             </p>
             <h1 className="text-4xl font-semibold tracking-[-0.04em] text-[#0a0a0a] md:text-5xl">
               Let's talk about your operations.
             </h1>
             <p className="mx-auto mt-6 text-base leading-relaxed text-[#6b6b6b] md:text-lg">
-              Fill out the form below or email us directly at <a href="mailto:contact@ovelah.com" className="font-medium text-[#0a0a0a] underline underline-offset-4">contact@ovelah.com</a>.
+              Tell us a bit about your business, or email us directly at <a href="mailto:contact@ovelah.com" className="font-medium text-[#0a0a0a] underline underline-offset-4">contact@ovelah.com</a>.
             </p>
           </div>
 
           <div className="mx-auto mt-16 max-w-xl rounded-2xl border border-[#e7e7e4] bg-[#f7f7f5] p-6 shadow-sm md:p-10">
             <form onSubmit={handleSubmit} className="flex flex-col gap-6">
               
+              {/* Row 1: Name and Email */}
               <div className="grid gap-6 md:grid-cols-2">
                 <div className="flex flex-col gap-2">
                   <label htmlFor="name" className="text-sm font-medium text-[#0a0a0a]">Name</label>
                   <input type="text" id="name" name="name" required disabled={status === "loading"} className="rounded-lg border border-[#d5d5d0] bg-white px-4 py-3 text-sm transition focus:border-[#0b1f3a] focus:outline-none focus:ring-1 focus:ring-[#0b1f3a] disabled:opacity-50" placeholder="John Doe" />
                 </div>
                 <div className="flex flex-col gap-2">
-                  <label htmlFor="email" className="text-sm font-medium text-[#0a0a0a]">Email</label>
+                  <label htmlFor="email" className="text-sm font-medium text-[#0a0a0a]">Work Email</label>
                   <input type="email" id="email" name="email" required disabled={status === "loading"} className="rounded-lg border border-[#d5d5d0] bg-white px-4 py-3 text-sm transition focus:border-[#0b1f3a] focus:outline-none focus:ring-1 focus:ring-[#0b1f3a] disabled:opacity-50" placeholder="john@company.com" />
                 </div>
               </div>
               
+              {/* Row 2: Company Name */}
               <div className="flex flex-col gap-2">
                 <label htmlFor="company" className="text-sm font-medium text-[#0a0a0a]">Company</label>
-                <input type="text" id="company" name="company" disabled={status === "loading"} className="rounded-lg border border-[#d5d5d0] bg-white px-4 py-3 text-sm transition focus:border-[#0b1f3a] focus:outline-none focus:ring-1 focus:ring-[#0b1f3a] disabled:opacity-50" placeholder="Company Name" />
+                <input type="text" id="company" name="company" required disabled={status === "loading"} className="rounded-lg border border-[#d5d5d0] bg-white px-4 py-3 text-sm transition focus:border-[#0b1f3a] focus:outline-none focus:ring-1 focus:ring-[#0b1f3a] disabled:opacity-50" placeholder="Company Name" />
               </div>
 
+              {/* Row 3: Industry and Team Size */}
+              <div className="grid gap-6 md:grid-cols-2">
+                <div className="flex flex-col gap-2">
+                  <label htmlFor="industry" className="text-sm font-medium text-[#0a0a0a]">Primary Industry</label>
+                  <select id="industry" name="industry" required disabled={status === "loading"} className="rounded-lg border border-[#d5d5d0] bg-white px-4 py-3 text-sm text-[#0a0a0a] transition focus:border-[#0b1f3a] focus:outline-none focus:ring-1 focus:ring-[#0b1f3a] disabled:opacity-50">
+                    <option value="" disabled selected>Select industry...</option>
+                    <option value="HVAC & Electrical">HVAC & Electrical</option>
+                    <option value="Engineering & Maintenance">Engineering & Maintenance</option>
+                    <option value="Facility Management">Facility Management</option>
+                    <option value="Construction & Contracting">Construction & Contracting</option>
+                    <option value="Technical Services">Technical Services</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+                <div className="flex flex-col gap-2">
+                  <label htmlFor="teamSize" className="text-sm font-medium text-[#0a0a0a]">Team Size</label>
+                  <select id="teamSize" name="teamSize" required disabled={status === "loading"} className="rounded-lg border border-[#d5d5d0] bg-white px-4 py-3 text-sm text-[#0a0a0a] transition focus:border-[#0b1f3a] focus:outline-none focus:ring-1 focus:ring-[#0b1f3a] disabled:opacity-50">
+                    <option value="" disabled selected>Select size...</option>
+                    <option value="1-10">1 - 10 employees</option>
+                    <option value="11-50">11 - 50 employees</option>
+                    <option value="51-200">51 - 200 employees</option>
+                    <option value="200+">200+ employees</option>
+                  </select>
+                </div>
+              </div>
+
+              {/* Row 4: Custom Message */}
               <div className="flex flex-col gap-2">
-                <label htmlFor="message" className="text-sm font-medium text-[#0a0a0a]">Message</label>
-                <textarea id="message" name="message" required rows={4} disabled={status === "loading"} className="rounded-lg border border-[#d5d5d0] bg-white px-4 py-3 text-sm transition focus:border-[#0b1f3a] focus:outline-none focus:ring-1 focus:ring-[#0b1f3a] disabled:opacity-50" placeholder="How can we help you improve your operations?"></textarea>
+                <label htmlFor="message" className="text-sm font-medium text-[#0a0a0a]">How do you currently manage your operations?</label>
+                <textarea id="message" name="message" required rows={4} disabled={status === "loading"} className="rounded-lg border border-[#d5d5d0] bg-white px-4 py-3 text-sm transition focus:border-[#0b1f3a] focus:outline-none focus:ring-1 focus:ring-[#0b1f3a] disabled:opacity-50" placeholder="Briefly describe how you handle jobs, quotations, and invoicing today..."></textarea>
               </div>
 
-              <button type="submit" disabled={status === "loading" || status === "success"} className="btn-primary mt-2 w-full py-4 text-base disabled:opacity-70">
-                {status === "loading" ? "Sending..." : status === "success" ? "Message Sent!" : "Send Message"}
+              <button type="submit" disabled={status === "loading" || status === "success"} className="btn-primary mt-2 w-full rounded-md bg-[#0b1f3a] py-4 text-base font-semibold text-white transition-all hover:bg-[#0b1f3a]/90 disabled:opacity-70">
+                {status === "loading" ? "Sending..." : status === "success" ? "Message Sent!" : "Request Demo"}
               </button>
 
               {status === "error" && (
