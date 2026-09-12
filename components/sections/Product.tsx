@@ -21,7 +21,7 @@ export default function Product() {
               customers, locations, jobs, quotations and invoices every day.
             </p>
             <p className="mt-5 text-lg leading-relaxed text-[#6b6b6b]">
-              Ovelah ERP connects those operations into one clear system,
+              Ovelah connects those operations into one clear system,
               giving your team a better view of what is happening across
               your business.
             </p>

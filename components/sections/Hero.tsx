@@ -7,7 +7,7 @@ export default function Hero() {
       <Container>
         <div className="mx-auto max-w-4xl text-center">
           <p className="mb-4 text-xs font-bold uppercase tracking-[0.2em] text-[#0b1f3a]">
-            Operations & Service ERP
+            Operations & Service Management
           </p>
           <h1 className="mb-6 text-4xl font-semibold tracking-[-0.04em] text-[#0a0a0a] sm:text-5xl md:text-6xl leading-[1.1]">
             Designed for businesses that manage jobs, clients and operations.
@@ -21,7 +21,7 @@ export default function Hero() {
               href="#product"
               className="w-full sm:w-auto rounded-md bg-[#0b1f3a] px-7 py-3.5 text-sm font-semibold text-white shadow-sm transition-all hover:bg-[#0b1f3a]/90"
             >
-              Explore Ovelah ERP
+              Explore Ovelah
             </Link>
             <Link
               href="/contact"
