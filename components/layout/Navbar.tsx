@@ -13,16 +13,16 @@ export default function Navbar() {
 
           {/* Navigation Links */}
           <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-[#6b6b6b]">
-            <Link href="#clients" className="transition-colors hover:text-[#0b1f3a]">
+            <Link href="/clients" className="transition-colors hover:text-[#0b1f3a]">
               Clients
             </Link>
-            <Link href="#product" className="transition-colors hover:text-[#0b1f3a]">
+            <Link href="/#product" className="transition-colors hover:text-[#0b1f3a]">
               Product
             </Link>
-            <Link href="#about" className="transition-colors hover:text-[#0b1f3a]">
+            <Link href="/#about" className="transition-colors hover:text-[#0b1f3a]">
               About
             </Link>
-            <Link href="#contact" className="transition-colors hover:text-[#0b1f3a]">
+            <Link href="/contact" className="transition-colors hover:text-[#0b1f3a]">
               Contact
             </Link>
           </nav>
