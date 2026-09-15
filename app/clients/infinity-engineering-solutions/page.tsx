@@ -8,16 +8,36 @@ export default function InfinityCaseStudy() {
     "Transworld",
     "National Police Academy",
     "Gubloo Technologies",
-    "Cosmesurge Hospital"
+    "Cosmesurge Hospital",
+    "FIA Academy",
+    "NACTA Head office Islamabad"
   ];
 
   const workflowSteps = [
-    { title: "Client & Location", desc: "A new job is initiated and mapped to a specific customer site." },
-    { title: "Job Creation", desc: "Work requirements are detailed and assigned to the field team." },
-    { title: "Quotation", desc: "Estimates are generated against the specific job parameters." },
-    { title: "Service Report", desc: "Field teams submit completion documentation directly into the system." },
-    { title: "Invoice", desc: "Billing is automatically generated based on the completed service." },
-    { title: "Payment", desc: "Receivables are tracked to close the operational loop." }
+    { 
+      title: "Client & Location", 
+      desc: "A new job is initiated, categorized by client account, and precisely mapped to a specific geographic customer site or branch." 
+    },
+    { 
+      title: "Job Creation", 
+      desc: "Technical requirements, required materials, and timelines are detailed before being dispatched to the appropriate field engineering team." 
+    },
+    { 
+      title: "Quotation", 
+      desc: "Accurate cost estimates are generated against the specific job parameters, ensuring all anticipated labor and parts are accounted for prior to client approval." 
+    },
+    { 
+      title: "Service Report", 
+      desc: "Upon completion, field teams submit detailed documentation—including tasks performed, issues resolved, and materials consumed—directly into the system as proof of work." 
+    },
+    { 
+      title: "Invoice", 
+      desc: "Billing is rapidly generated based on the approved quotation and the verified service report, eliminating manual data entry errors." 
+    },
+    { 
+      title: "Payment", 
+      desc: "Receivables are tracked, and customer balances are automatically updated to close the operational loop and secure cash flow." 
+    }
   ];
 
   return (
@@ -81,22 +101,22 @@ export default function InfinityCaseStudy() {
                 <div className="mb-12 flex flex-col gap-8">
                   <div>
                     <h3 className="mb-2 text-xl font-semibold text-[#0b1f3a]">Clients & Locations</h3>
-                    <p className="text-base leading-relaxed">Rather than relying on disconnected spreadsheets, all customers and their individual geographic sites or branches are organized natively in one place, ensuring field teams always have exact coordinates and history.</p>
+                    <p className="text-base leading-relaxed">Rather than relying on disconnected spreadsheets or fragmented WhatsApp threads, all customers and their individual geographic sites are organized natively in one centralized database. For a company managing operations across multiple KFC branches or hospital wings, this means field teams always have exact coordinates, site-specific requirements, and historical maintenance data at their fingertips before they even arrive on-site.</p>
                   </div>
 
                   <div>
                     <h3 className="mb-2 text-xl font-semibold text-[#0b1f3a]">Jobs & Service Reports</h3>
-                    <p className="text-base leading-relaxed">Service requests, assigned maintenance work, and completed jobs are tracked from start to finish. This creates an unbroken chain of custody for every task, meaning management never has to guess the status of a deployment.</p>
+                    <p className="text-base leading-relaxed">Service requests, assigned maintenance work, and completed jobs are tracked from inception to resolution. This creates an unbroken chain of custody for every task. Management never has to guess the status of a deployment, and technicians can log specific interventions, parts used, and hours worked. The result is a transparent system that guarantees accountability and provides irrefutable proof of work for the client.</p>
                   </div>
 
                   <div>
                     <h3 className="mb-2 text-xl font-semibold text-[#0b1f3a]">Quotations & Invoices</h3>
-                    <p className="text-base leading-relaxed">Financial documentation is generated directly against the work performed. Quotations seamlessly transition into service documentation, which directly informs the final invoicing, eliminating redundant data entry.</p>
+                    <p className="text-base leading-relaxed">Financial documentation is generated directly against the specific scope of work performed. Once a job is marked complete, the service documentation directly informs the final invoicing process. By tightly coupling the operational work with the financial billing, Ovelah prevents revenue leakage from forgotten parts or undocumented labor, drastically accelerating the cash conversion cycle.</p>
                   </div>
 
                   <div>
                     <h3 className="mb-2 text-xl font-semibold text-[#0b1f3a]">Assets, Expenses & Credit</h3>
-                    <p className="text-base leading-relaxed">A business is more than just jobs. Equipment assets, job-specific expenses, outstanding customer balances, and credit positions remain completely visible alongside the daily workflow.</p>
+                    <p className="text-base leading-relaxed">Running a maintenance operation involves significant overhead beyond just labor. Physical equipment assets, fleet vehicles, and job-specific out-of-pocket expenses are tracked seamlessly within the platform. Furthermore, outstanding customer balances and real-time credit positions remain completely visible to management. This ensures that scheduling and financial decisions are never made in a vacuum, providing a holistic view of the company's profitability.</p>
                   </div>
                 </div>
 
@@ -118,9 +138,9 @@ export default function InfinityCaseStudy() {
                     ))}
                   </div>
 
-                  <div className="mt-12 rounded-lg bg-[#f7f7f5] p-6 border border-[#e7e7e4]">
+                  <div className="mt-12 rounded-lg border border-[#e7e7e4] bg-[#f7f7f5] p-6">
                     <p className="text-sm font-medium leading-relaxed text-[#0a0a0a]">
-                      While this workflow moves a job forward, <span className="font-bold text-[#0b1f3a]">Expenses, Assets, Balance & Credit</span> run in parallel to give management the complete financial picture.
+                      While this workflow moves a job forward, <span className="font-bold text-[#0b1f3a]">Expenses, Assets, Balance & Credit</span> run in parallel to give management the complete financial picture around every deployment.
                     </p>
                   </div>
                 </div>
