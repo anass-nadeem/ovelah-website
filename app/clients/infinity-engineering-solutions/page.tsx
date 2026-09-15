@@ -12,132 +12,131 @@ export default function InfinityCaseStudy() {
   ];
 
   const workflowSteps = [
-    "Client", "Location", "Job", "Quote", "Service Report", "Invoice", "Payment"
+    { title: "Client & Location", desc: "A new job is initiated and mapped to a specific customer site." },
+    { title: "Job Creation", desc: "Work requirements are detailed and assigned to the field team." },
+    { title: "Quotation", desc: "Estimates are generated against the specific job parameters." },
+    { title: "Service Report", desc: "Field teams submit completion documentation directly into the system." },
+    { title: "Invoice", desc: "Billing is automatically generated based on the completed service." },
+    { title: "Payment", desc: "Receivables are tracked to close the operational loop." }
   ];
 
   return (
     <>
       <Navbar />
       
-      <main className="bg-[#fcfcfb] pb-20 pt-24 md:pb-32 md:pt-32">
+      <main className="bg-[#fcfcfb] pb-24 pt-20 md:pb-32 md:pt-24">
         <Container>
           
-          {/* Premium Hero Section */}
-          <div className="mx-auto max-w-4xl text-center">
-            {/* Case Study Badge */}
-            <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-[#e7e7e4] bg-white px-4 py-1.5 shadow-sm">
-              <div className="h-2 w-2 rounded-full bg-[#0b1f3a]"></div>
-              <span className="text-xs font-semibold uppercase tracking-widest text-[#0a0a0a]">
-                Case Study
-              </span>
-            </div>
-            
-            <h1 className="mb-8 text-4xl font-semibold tracking-[-0.04em] text-[#0a0a0a] md:text-6xl leading-[1.1]">
+          {/* Executive Header */}
+          <div className="border-b border-[#e7e7e4] pb-12 md:pb-16">
+            <p className="mb-4 text-xs font-bold uppercase tracking-[0.2em] text-[#6b6b6b]">
+              Client Case Study
+            </p>
+            <h1 className="text-3xl font-semibold tracking-tight text-[#0a0a0a] md:text-5xl lg:text-6xl">
               Infinity Engineering Solutions
             </h1>
-            <p className="mx-auto max-w-2xl text-lg leading-relaxed text-[#6b6b6b] md:text-xl md:leading-loose">
-              Managing engineering, HVAC, and maintenance work for multiple organizations by keeping clients, locations, jobs, and financial records connected in one absolute truth.
+            <p className="mt-6 max-w-3xl text-lg leading-relaxed text-[#0b1f3a] md:text-2xl">
+              Managing engineering, HVAC, and maintenance operations by keeping clients, locations, jobs, and financial records connected in a single system.
             </p>
           </div>
 
-          {/* Editorial Client List (Replacing clunky pills) */}
-          <div className="mx-auto mt-24 max-w-5xl border-y border-[#e7e7e4] py-12 text-center">
-            <p className="mb-8 text-xs font-bold uppercase tracking-[0.2em] text-[#a3a3a3]">
-              Clients Managed Through Ovelah
-            </p>
-            <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-6">
-              {clients.map((client) => (
-                <span key={client} className="text-sm font-semibold text-[#6b6b6b] transition-colors hover:text-[#0b1f3a] md:text-base">
-                  {client}
-                </span>
-              ))}
-            </div>
-          </div>
-
-          {/* Bento Box Grid - How Infinity uses Ovelah */}
-          <div className="mx-auto mt-32 max-w-5xl">
-            <div className="mb-16 md:text-center">
-              <h2 className="text-3xl font-semibold tracking-tight text-[#0a0a0a] md:text-4xl">
-                The Operational Engine
-              </h2>
-            </div>
+          {/* Two-Column Editorial Layout */}
+          <div className="mt-12 flex flex-col gap-16 md:mt-16 lg:flex-row lg:gap-24">
             
-            <div className="grid gap-4 md:grid-cols-3">
-              
-              {/* Row 1 */}
-              <div className="group flex flex-col justify-between rounded-3xl bg-[#f7f7f5] p-8 transition-colors hover:bg-[#f0f0ed] md:col-span-2 md:p-10">
-                <h4 className="mb-4 text-xl font-semibold text-[#0b1f3a]">Jobs & Service Reports</h4>
-                <p className="max-w-md text-base leading-relaxed text-[#6b6b6b]">Service requests, assigned work, and completed jobs are tracked from start to finish without letting a single status slip through the cracks.</p>
-              </div>
-              
-              <div className="group flex flex-col justify-between rounded-3xl bg-[#f7f7f5] p-8 transition-colors hover:bg-[#f0f0ed] md:col-span-1 md:p-10">
-                <h4 className="mb-4 text-xl font-semibold text-[#0b1f3a]">Clients & Locations</h4>
-                <p className="text-base leading-relaxed text-[#6b6b6b]">All customers and their individual sites and branches organized natively.</p>
-              </div>
-              
-              {/* Row 2 */}
-              <div className="group flex flex-col justify-between rounded-3xl bg-[#f7f7f5] p-8 transition-colors hover:bg-[#f0f0ed] md:col-span-1 md:p-10">
-                <h4 className="mb-4 text-xl font-semibold text-[#0b1f3a]">Quotes & Invoicing</h4>
-                <p className="text-base leading-relaxed text-[#6b6b6b]">Quotations created against work, followed by service documentation and final billing.</p>
-              </div>
-              
-              <div className="group flex flex-col justify-between rounded-3xl bg-[#f7f7f5] p-8 transition-colors hover:bg-[#f0f0ed] md:col-span-1 md:p-10">
-                <h4 className="mb-4 text-xl font-semibold text-[#0b1f3a]">Expenses & Assets</h4>
-                <p className="text-base leading-relaxed text-[#6b6b6b]">Job-related expenses and physical equipment are tracked seamlessly.</p>
-              </div>
-              
-              <div className="group flex flex-col justify-between rounded-3xl bg-[#f7f7f5] p-8 transition-colors hover:bg-[#f0f0ed] md:col-span-1 md:p-10">
-                <h4 className="mb-4 text-xl font-semibold text-[#0b1f3a]">Balance & Credit</h4>
-                <p className="text-base leading-relaxed text-[#6b6b6b]">Live visibility into outstanding customer balances and exact payment positions.</p>
-              </div>
-
-            </div>
-          </div>
-
-          {/* Premium Pipeline UI - The Workflow */}
-          <div className="mx-auto mt-32 max-w-5xl overflow-hidden rounded-[2rem] bg-[#0b1f3a] p-10 shadow-2xl md:p-20">
-            <h3 className="mb-16 text-center text-xs font-bold uppercase tracking-[0.2em] text-[#8fa3ba]">
-              The Lifecycle Workflow
-            </h3>
-            
-            {/* Visual Pipeline */}
-            <div className="relative mx-auto flex max-w-4xl flex-col items-start justify-between gap-6 md:flex-row md:items-center md:gap-0">
-              
-              {/* Connecting Background Line (Desktop only) */}
-              <div className="absolute left-0 top-1/2 hidden h-0.5 w-full -translate-y-1/2 bg-[#1e3a5f] md:block"></div>
-
-              {workflowSteps.map((step, index) => (
-                <div key={step} className="relative z-10 flex flex-row items-center gap-4 md:flex-col md:gap-4">
-                  {/* Pipeline Node */}
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border-4 border-[#0b1f3a] bg-[#38bdf8] shadow-[0_0_0_4px_rgba(11,31,58,1)] transition-transform hover:scale-110 md:h-6 md:w-6"></div>
-                  {/* Label */}
-                  <span className="text-sm font-semibold text-white md:absolute md:-bottom-10 md:whitespace-nowrap">{step}</span>
-                  
-                  {/* Mobile Connecting Line */}
-                  {index !== workflowSteps.length - 1 && (
-                    <div className="absolute left-5 top-10 h-full w-0.5 bg-[#1e3a5f] md:hidden"></div>
-                  )}
+            {/* Left Sidebar (Sticky Metadata) */}
+            <aside className="lg:w-1/3">
+              <div className="sticky top-24 rounded-xl border border-[#e7e7e4] bg-white p-8 shadow-sm">
+                <h3 className="mb-6 text-sm font-semibold uppercase tracking-widest text-[#0a0a0a]">
+                  Profile Overview
+                </h3>
+                
+                <div className="mb-8">
+                  <p className="mb-2 text-xs font-semibold text-[#6b6b6b]">Industry</p>
+                  <p className="text-sm font-medium text-[#0b1f3a]">Engineering & Maintenance</p>
                 </div>
-              ))}
-            </div>
 
-            <div className="mx-auto mt-16 max-w-2xl border-t border-[#1e3a5f] pt-10 text-center md:mt-28">
-              <p className="text-sm leading-relaxed text-[#8fa3ba] md:text-base md:leading-loose">
-                While <span className="font-semibold text-white">Expenses, Assets, Balance & Credit</span> give management the financial and operational picture wrapped entirely around that workflow.
-              </p>
-            </div>
+                <div>
+                  <p className="mb-4 text-xs font-semibold text-[#6b6b6b]">Key Clients Managed via Ovelah</p>
+                  <ul className="flex flex-col gap-3">
+                    {clients.map((client) => (
+                      <li key={client} className="flex items-start gap-2 text-sm font-medium text-[#0b1f3a]">
+                        <svg className="mt-0.5 h-4 w-4 shrink-0 text-[#6b6b6b]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                        {client}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </aside>
+
+            {/* Right Column (Deep Dive Content) */}
+            <article className="lg:w-2/3">
+              <div className="prose prose-lg max-w-none text-[#6b6b6b]">
+                <h2 className="mb-8 text-2xl font-semibold tracking-tight text-[#0a0a0a] md:text-3xl">
+                  The Operational Engine
+                </h2>
+                
+                <div className="mb-12 flex flex-col gap-8">
+                  <div>
+                    <h3 className="mb-2 text-xl font-semibold text-[#0b1f3a]">Clients & Locations</h3>
+                    <p className="text-base leading-relaxed">Rather than relying on disconnected spreadsheets, all customers and their individual geographic sites or branches are organized natively in one place, ensuring field teams always have exact coordinates and history.</p>
+                  </div>
+
+                  <div>
+                    <h3 className="mb-2 text-xl font-semibold text-[#0b1f3a]">Jobs & Service Reports</h3>
+                    <p className="text-base leading-relaxed">Service requests, assigned maintenance work, and completed jobs are tracked from start to finish. This creates an unbroken chain of custody for every task, meaning management never has to guess the status of a deployment.</p>
+                  </div>
+
+                  <div>
+                    <h3 className="mb-2 text-xl font-semibold text-[#0b1f3a]">Quotations & Invoices</h3>
+                    <p className="text-base leading-relaxed">Financial documentation is generated directly against the work performed. Quotations seamlessly transition into service documentation, which directly informs the final invoicing, eliminating redundant data entry.</p>
+                  </div>
+
+                  <div>
+                    <h3 className="mb-2 text-xl font-semibold text-[#0b1f3a]">Assets, Expenses & Credit</h3>
+                    <p className="text-base leading-relaxed">A business is more than just jobs. Equipment assets, job-specific expenses, outstanding customer balances, and credit positions remain completely visible alongside the daily workflow.</p>
+                  </div>
+                </div>
+
+                {/* Vertical Process Timeline */}
+                <div className="mt-16 border-t border-[#e7e7e4] pt-16">
+                  <h2 className="mb-10 text-2xl font-semibold tracking-tight text-[#0a0a0a] md:text-3xl">
+                    The System Workflow
+                  </h2>
+                  
+                  <div className="relative border-l-2 border-[#e7e7e4] pl-8">
+                    {workflowSteps.map((step, index) => (
+                      <div key={step.title} className="relative mb-10 last:mb-0">
+                        {/* Timeline Node */}
+                        <div className="absolute -left-[41px] top-1 h-5 w-5 rounded-full border-4 border-white bg-[#0b1f3a]"></div>
+                        
+                        <h4 className="text-lg font-semibold text-[#0b1f3a]">{step.title}</h4>
+                        <p className="mt-1 text-base text-[#6b6b6b]">{step.desc}</p>
+                      </div>
+                    ))}
+                  </div>
+
+                  <div className="mt-12 rounded-lg bg-[#f7f7f5] p-6 border border-[#e7e7e4]">
+                    <p className="text-sm font-medium leading-relaxed text-[#0a0a0a]">
+                      While this workflow moves a job forward, <span className="font-bold text-[#0b1f3a]">Expenses, Assets, Balance & Credit</span> run in parallel to give management the complete financial picture.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </article>
+
           </div>
-
         </Container>
       </main>
 
       {/* The Closing Statement */}
-      <section className="border-t border-[#e7e7e4] bg-white py-32 text-center">
+      <section className="bg-[#0b1f3a] py-24 text-center text-white md:py-32">
         <Container>
-          <h2 className="text-4xl font-semibold tracking-[-0.02em] text-[#0a0a0a] md:text-6xl leading-[1.1]">
-            One business. <br className="hidden md:block" />
-            <span className="text-[#6b6b6b]">Multiple clients.</span> <br />
-            One connected system.
+          <h2 className="text-3xl font-semibold tracking-tight md:text-5xl lg:text-6xl">
+            One business. <br className="md:hidden" />Multiple clients. <br className="md:hidden" />One connected system.
           </h2>
         </Container>
       </section>
