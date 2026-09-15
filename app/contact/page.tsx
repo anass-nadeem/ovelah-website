@@ -106,7 +106,7 @@ export default function ContactPage() {
               </div>
 
               <button type="submit" disabled={status === "loading" || status === "success"} className="btn-primary mt-2 w-full rounded-md bg-[#0b1f3a] py-4 text-base font-semibold text-white transition-all hover:bg-[#0b1f3a]/90 disabled:opacity-70">
-                {status === "loading" ? "Sending..." : status === "success" ? "Message Sent!" : "Request Demo"}
+                {status === "loading" ? "Sending..." : status === "success" ? "Message Sent!" : "Start 1 Month Free Trial"}
               </button>
 
               {status === "error" && (
