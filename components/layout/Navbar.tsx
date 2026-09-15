@@ -9,7 +9,9 @@ export default function Navbar() {
         <div className="flex h-16 items-center justify-between">
           
           {/* Brand Logo Component */}
-          <Logo />
+          <Link href="/">
+            <Logo /> 
+          </Link>
 
           {/* Navigation Links */}
           <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-[#6b6b6b]">
