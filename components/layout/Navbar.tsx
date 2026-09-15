@@ -9,7 +9,7 @@ export default function Navbar() {
         <div className="flex h-16 items-center justify-between">
           
           {/* Brand Logo Component */}
-          <Link href="/">
+          <Link href="/" scroll={true}>
             <Logo /> 
           </Link>
 
@@ -32,7 +32,7 @@ export default function Navbar() {
           {/* Navbar CTA */}
           <div>
             <Link
-              href="/contact"
+              href="/contact" scroll={true}
               className="rounded-md bg-[#0b1f3a] px-4 py-2 text-sm font-semibold text-white transition-all hover:bg-[#0b1f3a]/90"
             >
               Start 1 Month Free Trial
