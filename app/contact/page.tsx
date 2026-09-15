@@ -42,10 +42,10 @@ export default function ContactPage() {
           
           <div className="mx-auto max-w-2xl text-center">
             <p className="mb-6 text-xs font-bold tracking-[0.2em] text-[#0b1f3a]">
-              REQUEST A DEMO
+              Start 1 Month Free Trial
             </p>
             <h1 className="text-4xl font-semibold tracking-[-0.04em] text-[#0a0a0a] md:text-5xl">
-              Let's talk about your operations.
+              Get full access to Ovelah for 30 days. Fill out the details below and we will set up your operational workspace.
             </h1>
             <p className="mx-auto mt-6 text-base leading-relaxed text-[#6b6b6b] md:text-lg">
               Tell us a bit about your business, or email us directly at <a href="mailto:contact@ovelah.com" className="font-medium text-[#0a0a0a] underline underline-offset-4">contact@ovelah.com</a>.

@@ -16,7 +16,7 @@ export default function CTA() {
             href="/contact"
             className="inline-block rounded-md bg-white px-7 py-3.5 text-sm font-semibold tracking-wide text-[#0b1f3a] transition-all hover:bg-gray-100 shadow-lg"
           >
-            Request a Demo
+            Start 1 Month Free Trial
           </Link>
         </div>
       </Container>

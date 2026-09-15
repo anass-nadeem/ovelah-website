@@ -27,7 +27,7 @@ export default function Hero() {
               href="/contact"
               className="w-full sm:w-auto rounded-md border border-[#e7e7e4] bg-white px-7 py-3.5 text-sm font-semibold text-[#0a0a0a] transition-all hover:border-[#0b1f3a] hover:text-[#0b1f3a]"
             >
-              Request a Demo
+              Start 1 Month Free Trial
             </Link>
           </div>
         </div>

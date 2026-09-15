@@ -33,7 +33,7 @@ export default function Navbar() {
               href="/contact"
               className="rounded-md bg-[#0b1f3a] px-4 py-2 text-sm font-semibold text-white transition-all hover:bg-[#0b1f3a]/90"
             >
-              Request a Demo
+              Start 1 Month Free Trial
             </Link>
           </div>
           
