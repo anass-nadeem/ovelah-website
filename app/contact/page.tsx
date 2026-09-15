@@ -8,114 +8,117 @@ import Container from "@/components/ui/Container";
 export default function ContactPage() {
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
 
-  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault();
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    // 1. CRITICAL: This stops the browser from doing a default HTML refresh
+    e.preventDefault(); 
     setStatus("loading");
 
+    // 2. Package the form data
     const formData = new FormData(e.currentTarget);
-    const data = Object.fromEntries(formData.entries());
+    const data = Object.fromEntries(formData);
 
     try {
+      // 3. Send the data to your exact API route
+      // NOTE: If your backend file is at app/api/send/route.ts, change this to "/api/send"
       const response = await fetch("/api/contact", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+        },
         body: JSON.stringify(data),
       });
 
       if (response.ok) {
         setStatus("success");
-        (e.target as HTMLFormElement).reset();
       } else {
         setStatus("error");
       }
     } catch (error) {
+      console.error("Submission failed:", error);
       setStatus("error");
     }
-  }
+  };
 
   return (
     <>
       <Navbar />
       
-      <main className="py-20 md:py-32">
+      <main className="min-h-screen bg-[#fcfcfb] py-24 md:py-32">
         <Container>
-          
-          <div className="mx-auto max-w-2xl text-center">
-            <p className="mb-6 text-xs font-bold tracking-[0.2em] text-[#0b1f3a]">
-              Start 1 Month Free Trial
-            </p>
-            <h1 className="text-4xl font-semibold tracking-[-0.04em] text-[#0a0a0a] md:text-5xl">
-              Get full access to Ovelah for 30 days. Fill out the details below and we will set up your operational workspace.
-            </h1>
-            <p className="mx-auto mt-6 text-base leading-relaxed text-[#6b6b6b] md:text-lg">
-              Tell us a bit about your business, or email us directly at <a href="mailto:contact@ovelah.com" className="font-medium text-[#0a0a0a] underline underline-offset-4">contact@ovelah.com</a>.
-            </p>
+          <div className="mx-auto max-w-xl">
+            
+            <div className="mb-12 text-center">
+              <h1 className="text-3xl font-semibold tracking-tight text-[#0a0a0a] md:text-4xl">
+                Start your 1-month free trial
+              </h1>
+              <p className="mt-4 text-base text-[#6b6b6b]">
+                Get full access to Ovelah for 30 days. Fill out the details below and we will set up your operational workspace.
+              </p>
+            </div>
+
+            {status === "success" ? (
+              <div className="rounded-2xl border border-[#e7e7e4] bg-[#f7f7f5] p-10 text-center">
+                <h3 className="mb-2 text-xl font-semibold text-[#0b1f3a]">Request Sent Successfully</h3>
+                <p className="text-[#6b6b6b]">We have received your details and will be in touch shortly to set up your workspace.</p>
+              </div>
+            ) : (
+              <form 
+                onSubmit={handleSubmit} 
+                className="flex flex-col gap-6 rounded-2xl border border-[#e7e7e4] bg-white p-8 shadow-sm md:p-10"
+              >
+                <div className="grid gap-6 md:grid-cols-2">
+                  <div className="flex flex-col gap-2">
+                    <label htmlFor="name" className="text-sm font-semibold text-[#0b1f3a]">Full Name</label>
+                    <input type="text" name="name" id="name" required className="rounded-lg border border-[#e7e7e4] bg-[#fcfcfb] px-4 py-3 text-sm text-[#0a0a0a] outline-none transition-colors focus:border-[#0b1f3a]" />
+                  </div>
+                  <div className="flex flex-col gap-2">
+                    <label htmlFor="email" className="text-sm font-semibold text-[#0b1f3a]">Work Email</label>
+                    <input type="email" name="email" id="email" required className="rounded-lg border border-[#e7e7e4] bg-[#fcfcfb] px-4 py-3 text-sm text-[#0a0a0a] outline-none transition-colors focus:border-[#0b1f3a]" />
+                  </div>
+                </div>
+
+                <div className="flex flex-col gap-2">
+                  <label htmlFor="company" className="text-sm font-semibold text-[#0b1f3a]">Company Name</label>
+                  <input type="text" name="company" id="company" required className="rounded-lg border border-[#e7e7e4] bg-[#fcfcfb] px-4 py-3 text-sm text-[#0a0a0a] outline-none transition-colors focus:border-[#0b1f3a]" />
+                </div>
+
+                <div className="grid gap-6 md:grid-cols-2">
+                  <div className="flex flex-col gap-2">
+                    <label htmlFor="industry" className="text-sm font-semibold text-[#0b1f3a]">Industry</label>
+                    <input type="text" name="industry" id="industry" required placeholder="e.g. HVAC, Engineering" className="rounded-lg border border-[#e7e7e4] bg-[#fcfcfb] px-4 py-3 text-sm text-[#0a0a0a] outline-none transition-colors focus:border-[#0b1f3a]" />
+                  </div>
+                  <div className="flex flex-col gap-2">
+                    <label htmlFor="teamSize" className="text-sm font-semibold text-[#0b1f3a]">Team Size</label>
+                    <select name="teamSize" id="teamSize" required className="rounded-lg border border-[#e7e7e4] bg-[#fcfcfb] px-4 py-3 text-sm text-[#0a0a0a] outline-none transition-colors focus:border-[#0b1f3a]">
+                      <option value="">Select size...</option>
+                      <option value="1-10">1-10 employees</option>
+                      <option value="11-50">11-50 employees</option>
+                      <option value="51-200">51-200 employees</option>
+                      <option value="200+">200+ employees</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div className="flex flex-col gap-2">
+                  <label htmlFor="message" className="text-sm font-semibold text-[#0b1f3a]">Current Operations (Optional)</label>
+                  <textarea name="message" id="message" rows={3} className="resize-none rounded-lg border border-[#e7e7e4] bg-[#fcfcfb] px-4 py-3 text-sm text-[#0a0a0a] outline-none transition-colors focus:border-[#0b1f3a]" placeholder="How are you currently managing your jobs?"></textarea>
+                </div>
+
+                <button 
+                  type="submit" 
+                  disabled={status === "loading"}
+                  className="mt-4 rounded-xl bg-[#0b1f3a] px-6 py-4 text-sm font-semibold text-white transition-colors hover:bg-[#1a3057] disabled:opacity-70"
+                >
+                  {status === "loading" ? "Processing..." : "Start 1 Month Free Trial"}
+                </button>
+
+                {status === "error" && (
+                  <p className="text-center text-sm font-medium text-red-500">Something went wrong. Please try again.</p>
+                )}
+              </form>
+            )}
+
           </div>
-
-          <div className="mx-auto mt-16 max-w-xl rounded-2xl border border-[#e7e7e4] bg-[#f7f7f5] p-6 shadow-sm md:p-10">
-            <form onSubmit={handleSubmit} className="flex flex-col gap-6">
-              
-              {/* Row 1: Name and Email */}
-              <div className="grid gap-6 md:grid-cols-2">
-                <div className="flex flex-col gap-2">
-                  <label htmlFor="name" className="text-sm font-medium text-[#0a0a0a]">Name</label>
-                  <input type="text" id="name" name="name" required disabled={status === "loading"} className="rounded-lg border border-[#d5d5d0] bg-white px-4 py-3 text-sm transition focus:border-[#0b1f3a] focus:outline-none focus:ring-1 focus:ring-[#0b1f3a] disabled:opacity-50" placeholder="John Doe" />
-                </div>
-                <div className="flex flex-col gap-2">
-                  <label htmlFor="email" className="text-sm font-medium text-[#0a0a0a]">Work Email</label>
-                  <input type="email" id="email" name="email" required disabled={status === "loading"} className="rounded-lg border border-[#d5d5d0] bg-white px-4 py-3 text-sm transition focus:border-[#0b1f3a] focus:outline-none focus:ring-1 focus:ring-[#0b1f3a] disabled:opacity-50" placeholder="john@company.com" />
-                </div>
-              </div>
-              
-              {/* Row 2: Company Name */}
-              <div className="flex flex-col gap-2">
-                <label htmlFor="company" className="text-sm font-medium text-[#0a0a0a]">Company</label>
-                <input type="text" id="company" name="company" required disabled={status === "loading"} className="rounded-lg border border-[#d5d5d0] bg-white px-4 py-3 text-sm transition focus:border-[#0b1f3a] focus:outline-none focus:ring-1 focus:ring-[#0b1f3a] disabled:opacity-50" placeholder="Company Name" />
-              </div>
-
-              {/* Row 3: Industry and Team Size */}
-              <div className="grid gap-6 md:grid-cols-2">
-                <div className="flex flex-col gap-2">
-                  <label htmlFor="industry" className="text-sm font-medium text-[#0a0a0a]">Primary Industry</label>
-                  <select id="industry" name="industry" required disabled={status === "loading"} className="rounded-lg border border-[#d5d5d0] bg-white px-4 py-3 text-sm text-[#0a0a0a] transition focus:border-[#0b1f3a] focus:outline-none focus:ring-1 focus:ring-[#0b1f3a] disabled:opacity-50">
-                    <option value="" disabled selected>Select industry...</option>
-                    <option value="HVAC & Electrical">HVAC & Electrical</option>
-                    <option value="Engineering & Maintenance">Engineering & Maintenance</option>
-                    <option value="Facility Management">Facility Management</option>
-                    <option value="Construction & Contracting">Construction & Contracting</option>
-                    <option value="Technical Services">Technical Services</option>
-                    <option value="Other">Other</option>
-                  </select>
-                </div>
-                <div className="flex flex-col gap-2">
-                  <label htmlFor="teamSize" className="text-sm font-medium text-[#0a0a0a]">Team Size</label>
-                  <select id="teamSize" name="teamSize" required disabled={status === "loading"} className="rounded-lg border border-[#d5d5d0] bg-white px-4 py-3 text-sm text-[#0a0a0a] transition focus:border-[#0b1f3a] focus:outline-none focus:ring-1 focus:ring-[#0b1f3a] disabled:opacity-50">
-                    <option value="" disabled selected>Select size...</option>
-                    <option value="1-10">1 - 10 employees</option>
-                    <option value="11-50">11 - 50 employees</option>
-                    <option value="51-200">51 - 200 employees</option>
-                    <option value="200+">200+ employees</option>
-                  </select>
-                </div>
-              </div>
-
-              {/* Row 4: Custom Message */}
-              <div className="flex flex-col gap-2">
-                <label htmlFor="message" className="text-sm font-medium text-[#0a0a0a]">How do you currently manage your operations?</label>
-                <textarea id="message" name="message" required rows={4} disabled={status === "loading"} className="rounded-lg border border-[#d5d5d0] bg-white px-4 py-3 text-sm transition focus:border-[#0b1f3a] focus:outline-none focus:ring-1 focus:ring-[#0b1f3a] disabled:opacity-50" placeholder="Briefly describe how you handle jobs, quotations, and invoicing today..."></textarea>
-              </div>
-
-              <button type="submit" disabled={status === "loading" || status === "success"} className="btn-primary mt-2 w-full rounded-md bg-[#0b1f3a] py-4 text-base font-semibold text-white transition-all hover:bg-[#0b1f3a]/90 disabled:opacity-70">
-                {status === "loading" ? "Sending..." : status === "success" ? "Message Sent!" : "Start 1 Month Free Trial"}
-              </button>
-
-              {status === "error" && (
-                <p className="text-center text-sm font-medium text-red-600">Something went wrong. Please try emailing us directly.</p>
-              )}
-              
-            </form>
-          </div>
-
         </Container>
       </main>
 
