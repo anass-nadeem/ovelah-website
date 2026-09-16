@@ -16,8 +16,9 @@ export async function POST(request: Request) {
 
   } catch (error: any) {
     return NextResponse.json(
-      { error: "Failed to parse JSON" },
+      { error: "Failed t parse JSON" },
       { status: 400 }
     );
   }
-}
+} 
+// testing
