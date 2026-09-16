@@ -1,1 +1,2 @@
 22
+echo "22" > .node-version
