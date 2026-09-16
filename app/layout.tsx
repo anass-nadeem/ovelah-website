@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-<link rel="icon" href="/icon.svg" />
-
 export const metadata: Metadata = {
   title: "Ovelah | Software for Business Operations",
   description:
     "Ovelah builds practical software for businesses managing jobs, quotations, invoices and operations.",
+  icons: {
+    icon: '/icon.svg',
+  },
 };
 
 export default function RootLayout({
