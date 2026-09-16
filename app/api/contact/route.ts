@@ -1,7 +1,5 @@
 import { NextResponse } from "next/server";
 
-// 1. THIS LINE IS BACK: It is mandatory for the stable Cloudflare compiler
-export const runtime = "edge";
 
 export async function POST(request: Request) {
   try {
