@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
+<link rel="icon" href="/icon.svg" />
+
 export const metadata: Metadata = {
   title: "Ovelah | Software for Business Operations",
   description:
