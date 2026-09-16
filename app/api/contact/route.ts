@@ -1,23 +1,39 @@
 import { NextResponse } from "next/server";
 
+// 1. THIS LINE IS BACK: It is mandatory for the stable Cloudflare compiler
+export const runtime = "edge";
 
 export async function POST(request: Request) {
   try {
-    // Just try to read the data the frontend sent
     const body = await request.json();
-    
-    // Immediately send a success response back without doing anything else
-    return NextResponse.json({ 
-      success: true, 
-      message: "The API route is alive!",
-      receivedData: body.email
+    const { name, email, company, industry, teamSize, message } = body;
+
+    const res = await fetch("https://api.resend.com/emails", {
+      method: "POST",
+      headers: {
+        "Authorization": `Bearer ${process.env.RESEND_API_KEY}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        from: "Ovelah Website <website@ovelah.com>", 
+        to: process.env.CONTACT_EMAIL,
+        reply_to: email,
+        subject: `New Demo Request from ${name} - ${company}`,
+        text: `Name: ${name}\nEmail: ${email}\nCompany: ${company}\nIndustry: ${industry}\nTeam Size: ${teamSize}\n\nCurrent Operations:\n${message}`,
+      }),
     });
 
+    const data = await res.json();
+
+    if (!res.ok) {
+      return NextResponse.json({ error: data }, { status: 400 });
+    }
+
+    return NextResponse.json({ success: true, data });
   } catch (error: any) {
     return NextResponse.json(
-      { error: "Failed t parse JSON" },
-      { status: 400 }
+      { error: "Internal Server Error" },
+      { status: 500 }
     );
   }
-} 
-// testing
+}
