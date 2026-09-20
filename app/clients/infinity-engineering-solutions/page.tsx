@@ -48,8 +48,8 @@ export default function InfinityCaseStudy() {
       <main className="bg-[#fcfcfb] pb-24 pt-20 md:pb-32 md:pt-24">
         <Container>
           
-          {/* Executive Header (Now a flex container for text + logo) */}
-          <div className="flex flex-col justify-between gap-8 border-b border-[#e7e7e4] pb-12 md:flex-row md:items-start md:pb-16">
+          {/* Executive Header */}
+          <div className="flex flex-col-reverse justify-between gap-10 border-b border-[#e7e7e4] pb-12 md:flex-row md:items-start md:pb-16">
             
             {/* Left: Text Content */}
             <div className="max-w-3xl">
@@ -64,23 +64,22 @@ export default function InfinityCaseStudy() {
               </p>
             </div>
 
-            {/* Right: Logo & Visit Button (Hidden on mobile to preserve layout) */}
-            <div className="hidden shrink-0 flex-col items-center gap-5 md:flex">
-              <div className="relative h-[80px] w-[200px] lg:h-[100px] lg:w-[220px]">
-                {/* Ensure you have an infinity-logo.png in your public/ folder */}
+            {/* Right: Logo & Visit Button */}
+            <div className="flex shrink-0 flex-col items-start gap-4 md:items-center md:gap-6">
+              <div className="relative h-[120px] w-[260px] md:h-[160px] md:w-[320px] lg:h-[180px] lg:w-[360px]">
                 <Image
                   src="/infinity-logo.png"
                   alt="Infinity Engineering Solutions Logo"
                   fill
-                  className="object-contain"
+                  className="object-contain object-left md:object-center"
                   priority
                 />
               </div>
               <a 
-                href="#" 
+                href="https://www.infinityies.com/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="rounded-md border border-[#0b1f3a] px-6 py-2 text-sm font-semibold text-[#0b1f3a] transition-colors hover:bg-[#0b1f3a] hover:text-white"
+                className="text-sm font-semibold text-blue-600 underline underline-offset-4 transition-colors hover:text-blue-800 md:rounded-md md:border md:border-[#0b1f3a] md:px-6 md:py-2 md:text-[#0b1f3a] md:no-underline md:hover:bg-[#0b1f3a] md:hover:text-white"
               >
                 Visit Infinity
               </a>
@@ -107,7 +106,6 @@ export default function InfinityCaseStudy() {
                   <ul className="flex flex-col gap-3">
                     {clients.map((client) => (
                       <li key={client} className="flex items-center gap-3 text-sm font-medium text-[#0b1f3a]">
-                        {/* Replaced chevron with an SVG dot */}
                         <svg className="h-2 w-2 shrink-0 fill-[#6b6b6b]" viewBox="0 0 8 8">
                           <circle cx="4" cy="4" r="4" />
                         </svg>
