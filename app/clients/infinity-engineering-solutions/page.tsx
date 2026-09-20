@@ -1,6 +1,7 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Container from "@/components/ui/Container";
+import Image from "next/image";
 
 export default function InfinityCaseStudy() {
   const clients = [
@@ -47,17 +48,43 @@ export default function InfinityCaseStudy() {
       <main className="bg-[#fcfcfb] pb-24 pt-20 md:pb-32 md:pt-24">
         <Container>
           
-          {/* Executive Header */}
-          <div className="border-b border-[#e7e7e4] pb-12 md:pb-16">
-            <p className="mb-4 text-xs font-bold uppercase tracking-[0.2em] text-[#6b6b6b]">
-              Client Case Study
-            </p>
-            <h1 className="text-3xl font-semibold tracking-tight text-[#0a0a0a] md:text-5xl lg:text-6xl">
-              Infinity Engineering Solutions
-            </h1>
-            <p className="mt-6 max-w-3xl text-lg leading-relaxed text-[#0b1f3a] md:text-2xl">
-              Managing engineering, HVAC, and maintenance operations by keeping clients, locations, jobs, and financial records connected in a single system.
-            </p>
+          {/* Executive Header (Now a flex container for text + logo) */}
+          <div className="flex flex-col justify-between gap-8 border-b border-[#e7e7e4] pb-12 md:flex-row md:items-start md:pb-16">
+            
+            {/* Left: Text Content */}
+            <div className="max-w-3xl">
+              <p className="mb-4 text-xs font-bold uppercase tracking-[0.2em] text-[#6b6b6b]">
+                Client Case Study
+              </p>
+              <h1 className="text-3xl font-semibold tracking-tight text-[#0a0a0a] md:text-5xl lg:text-6xl">
+                Infinity Engineering Solutions
+              </h1>
+              <p className="mt-6 text-lg leading-relaxed text-[#0b1f3a] md:text-2xl">
+                Managing engineering, HVAC, and maintenance operations by keeping clients, locations, jobs, and financial records connected in a single system.
+              </p>
+            </div>
+
+            {/* Right: Logo & Visit Button (Hidden on mobile to preserve layout) */}
+            <div className="hidden shrink-0 flex-col items-center gap-5 md:flex">
+              <div className="relative h-[80px] w-[200px] lg:h-[100px] lg:w-[220px]">
+                {/* Ensure you have an infinity-logo.png in your public/ folder */}
+                <Image
+                  src="/infinity-logo.png"
+                  alt="Infinity Engineering Solutions Logo"
+                  fill
+                  className="object-contain"
+                  priority
+                />
+              </div>
+              <a 
+                href="#" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="rounded-md border border-[#0b1f3a] px-6 py-2 text-sm font-semibold text-[#0b1f3a] transition-colors hover:bg-[#0b1f3a] hover:text-white"
+              >
+                Visit Infinity
+              </a>
+            </div>
           </div>
 
           {/* Two-Column Editorial Layout */}
@@ -79,9 +106,10 @@ export default function InfinityCaseStudy() {
                   <p className="mb-4 text-xs font-semibold text-[#6b6b6b]">Key Clients Managed via Ovelah</p>
                   <ul className="flex flex-col gap-3">
                     {clients.map((client) => (
-                      <li key={client} className="flex items-start gap-2 text-sm font-medium text-[#0b1f3a]">
-                        <svg className="mt-0.5 h-4 w-4 shrink-0 text-[#6b6b6b]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                      <li key={client} className="flex items-center gap-3 text-sm font-medium text-[#0b1f3a]">
+                        {/* Replaced chevron with an SVG dot */}
+                        <svg className="h-2 w-2 shrink-0 fill-[#6b6b6b]" viewBox="0 0 8 8">
+                          <circle cx="4" cy="4" r="4" />
                         </svg>
                         {client}
                       </li>
