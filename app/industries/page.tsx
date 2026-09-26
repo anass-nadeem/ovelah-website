@@ -8,22 +8,22 @@ export default function IndustriesPage() {
     {
       title: "Engineering & Maintenance",
       desc: "Manage ongoing service contracts, dispatch specialized field teams, and track complex technical documentation across long-term client engagements.",
-      slug: "#" // Can link to /industries/engineering-maintenance later
+      slug: "/industries/engineering-maintenance" 
     },
     {
       title: "HVAC & Electrical",
       desc: "Track physical equipment assets, manage recurring inspection schedules, and generate accurate quotations for highly technical installations.",
-      slug: "#"
+      slug: "/industries/engineering-maintenance"
     },
     {
       title: "Facility Management",
       desc: "Centralize requests across massive multi-building campuses. Organize workflows so facility teams arrive at the right wing with the right materials.",
-      slug: "#"
+      slug: "/industries/facility-management"
     },
     {
       title: "Construction & Contracting",
       desc: "Keep project expenses, labor tracking, and phased invoicing connected to specific job sites to ensure projects remain profitable.",
-      slug: "#"
+      slug: "/industries/construction"
     }
   ];
 
