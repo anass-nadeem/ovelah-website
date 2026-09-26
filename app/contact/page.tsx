@@ -53,7 +53,7 @@ export default function ContactPage() {
                 <p className="text-lg text-[#6b6b6b] mb-12">
                   Want to connect now?<br />
                   <a href="mailto:contact@ovelah.com" className="font-medium text-[#0b1f3a] hover:underline underline-offset-4 transition-all">
-                    contact@ovelah.com
+                    +92 313 4868131
                   </a>
                 </p>
                 
