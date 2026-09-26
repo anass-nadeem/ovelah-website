@@ -11,7 +11,7 @@ export default function ERPPage() {
     {
       title: "Clients",
       desc: "Maintain a centralized database of your customer accounts, contact details, and historical relationships without relying on fragmented spreadsheets.",
-      img: "/ui-clients.png" // Make sure to add these images to /public eventually
+      img: "/ui-clients.png" 
     },
     {
       title: "Locations",
@@ -31,12 +31,12 @@ export default function ERPPage() {
     {
       title: "Invoices",
       desc: "Prevent revenue leakage by seamlessly generating final billing documentation based on the approved quotation and completed operational work.",
-      img: "/ui-quotes_2.png" // Reusing quote PDF screenshot as placeholder for invoice
+      img: "/ui-invoice.png" 
     },
     {
       title: "Expenses & Assets",
       desc: "Track the internal overhead of doing business. Log physical equipment assets, fleet details, and out-of-pocket expenses tied to specific jobs.",
-      img: "/dash-hero.png" // Placeholder
+      img: "/ui-assets.png" 
     }
   ];
 
