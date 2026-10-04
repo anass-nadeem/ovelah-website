@@ -3,7 +3,9 @@ import Footer from "@/components/layout/Footer";
 import Container from "@/components/ui/Container";
 import Link from "next/link";
 import Image from "next/image";
+import ChecklistForm from "@/components/marketing/ChecklistForm";
 import { constructMetadata } from "@/lib/seo";
+import type { Organization, SoftwareApplication, FAQPage } from "schema-dts";
 
 export const metadata = constructMetadata({
   title: "Ovelah | Business Operations Software for Service Teams",
@@ -12,8 +14,66 @@ export const metadata = constructMetadata({
 });
 
 export default function Home() {
+  
+  // Task 14: Organization & Software Schema
+  const orgSchema: Organization = {
+    "@type": "Organization",
+    name: "Ovelah",
+    url: "https://ovelah.com",
+    logo: "https://ovelah.com/icon.svg",
+    contactPoint: {
+      "@type": "ContactPoint",
+      email: "contact@ovelah.com",
+      contactType: "customer service"
+    }
+  };
+
+  const softwareSchema: SoftwareApplication = {
+    "@type": "SoftwareApplication",
+    name: "Ovelah Operations Platform",
+    applicationCategory: "BusinessApplication",
+    operatingSystem: "Web",
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "USD"
+    }
+  };
+
+  // Define the raw data first
+  const faqs = [
+    {
+      question: "Who is Ovelah built for?",
+      answer: "Ovelah is built for service, maintenance, and contracting businesses such as HVAC, electrical, and facility management companies that dispatch teams to physical locations."
+    },
+    {
+      question: "Does Ovelah integrate with my existing accounting software?",
+      answer: "Ovelah focuses on the operational workflow up to the invoice generation. We are currently evaluating integrations with major accounting platforms."
+    },
+    {
+      question: "How is data secured?",
+      answer: "All customer records, quotations, and invoices are encrypted at rest and in transit. We use role-based access control to ensure your data remains strictly confidential."
+    }
+  ];
+
+  // Task 11: Build FAQ Schema dynamically from the data
+  const faqSchema: FAQPage = {
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer
+      }
+    }))
+  };
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <Navbar />
       
       <main className="bg-[#fcfcfb] pt-32 md:pt-40">
@@ -35,8 +95,8 @@ export default function Home() {
                 <Link href="/contact" className="w-full rounded-md bg-[#0b1f3a] px-8 py-3.5 text-center text-sm font-medium text-white transition-colors hover:bg-[#0a1526] sm:w-auto">
                   Request a Demo →
                 </Link>
-                <Link href="/platform" className="w-full rounded-md border border-[#e7e7e4] bg-white px-8 py-3.5 text-center text-sm font-medium text-[#0a0a0a] transition-colors hover:bg-[#f7f7f5] sm:w-auto">
-                  Explore Ovelah →
+                <Link href="/erp" className="w-full rounded-md border border-[#e7e7e4] bg-white px-8 py-3.5 text-center text-sm font-medium text-[#0a0a0a] transition-colors hover:bg-[#f7f7f5] sm:w-auto">
+                  Take a product tour →
                 </Link>
               </div>
             </div>
@@ -273,7 +333,41 @@ export default function Home() {
           </Container>
         </section>
 
-        {/* 7. FINAL CTA */}
+        {/* 7. FAQ SECTION (Task 11) */}
+        <section className="bg-white py-24 border-b border-[#e7e7e4]">
+          <Container>
+            <div className="mx-auto max-w-3xl">
+              <h2 className="mb-12 text-3xl font-semibold tracking-tight text-[#0a0a0a] md:text-4xl text-center">
+                Frequently Asked Questions
+              </h2>
+              <div className="flex flex-col gap-8">
+                {faqs.map((faq, index) => (
+                  <div key={index} className="border-b border-[#e7e7e4] pb-6 last:border-0">
+                    <h3 className="text-lg font-semibold text-[#0a0a0a] mb-2">{faq.question}</h3>
+                    <p className="text-[#6b6b6b] leading-relaxed">{faq.answer}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </Container>
+        </section>
+
+        {/* 8. LEAD MAGNET CHECKLIST (Task 12) */}
+        <section className="bg-[#f7f7f5] py-24 border-b border-[#e7e7e4]">
+          <Container>
+            <div className="mx-auto max-w-4xl flex flex-col md:flex-row items-center gap-12">
+              <div className="md:w-1/2">
+                <h2 className="text-2xl font-semibold text-[#0a0a0a] mb-4">Free Resource: The Operations Audit Checklist</h2>
+                <p className="text-[#6b6b6b] mb-0">Download our 10-point checklist to see where your service business is leaking margin between dispatch and invoicing.</p>
+              </div>
+              <div className="md:w-1/2 w-full">
+                <ChecklistForm />
+              </div>
+            </div>
+          </Container>
+        </section>
+
+        {/* 9. FINAL CTA */}
         <section className="bg-white py-32 text-center">
           <Container>
             <h2 className="mb-6 text-4xl font-semibold tracking-tight text-[#0a0a0a] md:text-6xl">
@@ -286,9 +380,9 @@ export default function Home() {
               <Link href="/contact" className="w-full rounded-md bg-[#0b1f3a] px-8 py-3.5 text-center text-sm font-medium text-white transition-colors hover:bg-[#0a1526] sm:w-auto">
                 Request a Demo
               </Link>
-              <a href="mailto:contact@ovelah.com" className="text-sm font-semibold text-[#0b1f3a] hover:underline underline-offset-4 ml-4">
+              <Link href="/contact" className="text-sm font-semibold text-[#0b1f3a] hover:underline underline-offset-4 sm:ml-4">
                 Contact Sales
-              </a>
+              </Link>
             </div>
           </Container>
         </section>

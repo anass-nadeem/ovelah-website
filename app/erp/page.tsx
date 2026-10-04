@@ -54,7 +54,7 @@ export default function ERPPage() {
                 Flagship Product
               </p>
               <h1 className="mb-8 text-4xl font-semibold tracking-tight text-[#0a0a0a] md:text-6xl lg:text-7xl">
-                Run your operations with Ovelah ERP.
+                Run your business with the Ovelah Platform.
               </h1>
               <p className="mx-auto mb-10 max-w-2xl text-lg leading-relaxed text-[#6b6b6b] md:text-xl">
                 A unified system designed specifically for service and maintenance businesses. Everything you need to manage the lifecycle of a job.
