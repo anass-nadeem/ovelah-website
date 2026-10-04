@@ -49,7 +49,7 @@ export default function PrivacyPolicyPage() {
             <p>
               Ovelah<br />
               Islamabad, Pakistan<br />
-              Operated by [ADD OWNER / OPERATOR FULL NAME]. Business registration is currently pending. [UPDATE WITH LEGAL ENTITY NAME AND REGISTRATION NUMBER ONCE REGISTERED]<br />
+              Operated by [MUHAMMAD ANAS NADEEM]. Business registration is currently pending. <br />
               Email: <a href="mailto:contact@ovelah.com" className="text-blue-600 transition-colors hover:text-blue-800 hover:underline">contact@ovelah.com</a>
             </p>
             <p>We act in two different roles, depending on the data involved:</p>

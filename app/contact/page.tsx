@@ -61,7 +61,7 @@ export default function ContactPage() {
                 <div className="hidden lg:block space-y-6 text-sm text-[#6b6b6b] pr-8">
                   <p>Ovelah will keep you informed with occasional updates about Ovelah products, services and events.</p>
                   <p>If you want to opt-out later, you can unsubscribe at any time.</p>
-                  <p>Personal data will be handled in accordance with the Ovelah Privacy Statement.</p>
+                  <p>Personal data will be handled in accordance with the Ovelah Privacy Policy.</p>
                 </div>
               </div>
 

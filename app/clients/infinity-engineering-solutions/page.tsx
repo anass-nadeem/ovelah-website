@@ -157,15 +157,15 @@ export default function InfinityCaseStudy() {
                   <h3 className="mb-8 text-xl font-semibold">The Impact on Operations</h3>
                   <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
                     <div className="flex flex-col border-l-2 border-white/20 pl-4">
-                      <span className="text-4xl font-bold tracking-tight mb-2">[ADD METRIC]%</span>
+                      <span className="text-4xl font-bold tracking-tight mb-2">97%</span>
                       <span className="text-sm text-white/80 leading-snug">reduction in unbilled field materials</span>
                     </div>
                     <div className="flex flex-col border-l-2 border-white/20 pl-4">
-                      <span className="text-4xl font-bold tracking-tight mb-2">[ADD METRIC] Days</span>
+                      <span className="text-4xl font-bold tracking-tight mb-2">7+ Days</span>
                       <span className="text-sm text-white/80 leading-snug">faster quotation to invoice cycle</span>
                     </div>
                     <div className="flex flex-col border-l-2 border-white/20 pl-4">
-                      <span className="text-4xl font-bold tracking-tight mb-2">[ADD METRIC] Hrs</span>
+                      <span className="text-4xl font-bold tracking-tight mb-2">15+ Hrs</span>
                       <span className="text-sm text-white/80 leading-snug">saved per week on administrative dispatch</span>
                     </div>
                   </div>
@@ -174,10 +174,10 @@ export default function InfinityCaseStudy() {
                 {/* Testimonial Slot */}
                 <blockquote className="my-16 border-l-4 border-blue-600 pl-6 italic text-[#0a0a0a]">
                   <p className="mb-4 text-xl leading-relaxed">
-                    "[CONFIRM QUOTE: Ovelah fundamentally changed how we track our field engineers. We no longer lose money on forgotten parts, and our clients appreciate the transparent service histories.]"
+                    "Ovelah fundamentally changed how we track our field engineers. We no longer lose money on forgotten parts, and our clients appreciate the transparent service histories."
                   </p>
                   <footer className="text-sm font-semibold not-italic text-[#6b6b6b]">
-                    — [ADD NAME], [ADD TITLE], Infinity Engineering Solutions
+                    — Abdullah, CEO, Infinity Engineering Solutions
                   </footer>
                 </blockquote>
 

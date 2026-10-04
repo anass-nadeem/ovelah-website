@@ -38,13 +38,16 @@ export default function Navbar() {
             <Link href="/industries" className="text-sm font-medium text-[#6b6b6b] transition-colors hover:text-[#0a0a0a]">
               Industries
             </Link>
-            <Link href="/customers" className="text-sm font-medium text-[#6b6b6b] transition-colors hover:text-[#0a0a0a]">
+            <Link href="/customers" className="text-sm font-medium text-[#6b6b6b] transition-colors hover:text-[#0a0a0a] outline-none focus-visible:ring-2 focus-visible:ring-[#0b1f3a] rounded-sm">
               Customers
             </Link>
-            <Link href="/blog" className="text-sm font-medium text-[#6b6b6b] transition-colors hover:text-[#0a0a0a]">
+            <Link href="/pricing" className="text-sm font-medium text-[#6b6b6b] transition-colors hover:text-[#0a0a0a] outline-none focus-visible:ring-2 focus-visible:ring-[#0b1f3a] rounded-sm">
+              Pricing
+            </Link>
+            <Link href="/blog" className="text-sm font-medium text-[#6b6b6b] transition-colors hover:text-[#0a0a0a] outline-none focus-visible:ring-2 focus-visible:ring-[#0b1f3a] rounded-sm">
               Blog
             </Link>
-            <Link href="/about" className="text-sm font-medium text-[#6b6b6b] transition-colors hover:text-[#0a0a0a]">
+            <Link href="/about" className="text-sm font-medium text-[#6b6b6b] transition-colors hover:text-[#0a0a0a] outline-none focus-visible:ring-2 focus-visible:ring-[#0b1f3a] rounded-sm">
               Company
             </Link>
           </div>
@@ -53,13 +56,13 @@ export default function Navbar() {
           <div className="flex items-center gap-3 md:gap-4">
             <Link 
               href="/contact" 
-              className="hidden text-sm font-semibold text-[#0b1f3a] transition-colors hover:text-blue-700 lg:block"
+              className="hidden text-sm font-semibold text-[#0b1f3a] transition-colors hover:text-blue-700 lg:block outline-none focus-visible:ring-2 focus-visible:ring-[#0b1f3a] rounded-sm min-h-[44px] flex items-center"
             >
               Contact
             </Link>
             <Link 
               href="/contact" 
-              className="rounded-md bg-[#0b1f3a] px-4 py-2 md:px-5 md:py-2.5 text-sm font-medium text-white transition-colors hover:bg-[#0a1526]"
+              className="min-h-[44px] flex items-center justify-center rounded-md bg-[#0b1f3a] px-4 py-2 md:px-5 md:py-2.5 text-sm font-medium text-white transition-colors hover:bg-[#0a1526] outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#0b1f3a]"
               onClick={closeMenu}
             >
               Request Demo
