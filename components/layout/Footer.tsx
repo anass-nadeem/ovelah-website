@@ -47,6 +47,7 @@ export default function Footer() {
             <ul className="flex flex-col gap-3">
               <li><Link href="/about" className="text-sm text-[#6b6b6b] hover:text-[#0a0a0a]">About Ovelah</Link></li>
               <li><Link href="/customers" className="text-sm text-[#6b6b6b] hover:text-[#0a0a0a]">Customer Stories</Link></li>
+              <li><Link href="/blog" className="text-sm text-[#6b6b6b] hover:text-[#0a0a0a]">Blog & Insights</Link></li>
               <li><Link href="/contact" className="text-sm text-[#6b6b6b] hover:text-[#0a0a0a]">Contact</Link></li>
               <li><a href="mailto:contact@ovelah.com" className="text-sm text-[#6b6b6b] hover:text-[#0a0a0a]">contact@ovelah.com</a></li>
             </ul>

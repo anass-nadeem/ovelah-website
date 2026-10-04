@@ -41,6 +41,9 @@ export default function Navbar() {
             <Link href="/customers" className="text-sm font-medium text-[#6b6b6b] transition-colors hover:text-[#0a0a0a]">
               Customers
             </Link>
+            <Link href="/blog" className="text-sm font-medium text-[#6b6b6b] transition-colors hover:text-[#0a0a0a]">
+              Blog
+            </Link>
             <Link href="/about" className="text-sm font-medium text-[#6b6b6b] transition-colors hover:text-[#0a0a0a]">
               Company
             </Link>
@@ -87,25 +90,25 @@ export default function Navbar() {
       {/* Mobile Menu Dropdown */}
       {isMobileMenuOpen && (
         <div className="absolute left-0 top-20 w-full border-b border-[#e7e7e4] bg-white px-6 py-8 shadow-xl md:hidden">
-          <div className="flex flex-col gap-6">
-            <Link href="/platform" onClick={closeMenu} className="text-lg font-medium text-[#0a0a0a]">
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex md:items-center md:gap-8">
+            <Link href="/platform" className="text-sm font-medium text-[#6b6b6b] transition-colors hover:text-[#0a0a0a]">
               Platform
             </Link>
-            <Link href="/solutions" onClick={closeMenu} className="text-lg font-medium text-[#0a0a0a]">
+            <Link href="/solutions" className="text-sm font-medium text-[#6b6b6b] transition-colors hover:text-[#0a0a0a]">
               Solutions
             </Link>
-            <Link href="/industries" onClick={closeMenu} className="text-lg font-medium text-[#0a0a0a]">
+            <Link href="/industries" className="text-sm font-medium text-[#6b6b6b] transition-colors hover:text-[#0a0a0a]">
               Industries
             </Link>
-            <Link href="/customers" onClick={closeMenu} className="text-lg font-medium text-[#0a0a0a]">
+            <Link href="/customers" className="text-sm font-medium text-[#6b6b6b] transition-colors hover:text-[#0a0a0a]">
               Customers
             </Link>
-            <Link href="/about" onClick={closeMenu} className="text-lg font-medium text-[#0a0a0a]">
-              Company
+            <Link href="/blog" className="text-sm font-medium text-[#6b6b6b] transition-colors hover:text-[#0a0a0a]">
+              Blog
             </Link>
-            <div className="my-2 h-px w-full bg-[#e7e7e4]"></div>
-            <Link href="/contact" onClick={closeMenu} className="text-lg font-medium text-[#0b1f3a]">
-              Contact Sales
+            <Link href="/about" className="text-sm font-medium text-[#6b6b6b] transition-colors hover:text-[#0a0a0a]">
+              Company
             </Link>
           </div>
         </div>

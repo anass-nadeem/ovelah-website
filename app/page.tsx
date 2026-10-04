@@ -26,10 +26,10 @@ export default function Home() {
                 Business Operations Software
               </p>
               <h1 className="mb-8 text-4xl font-semibold tracking-tight text-[#0a0a0a] md:text-6xl lg:text-7xl">
-                Business software for companies that run on real operations.
+                Business software for companies that run on field operations.
               </h1>
               <p className="mx-auto mb-10 max-w-2xl text-lg leading-relaxed text-[#6b6b6b] md:text-xl">
-                Ovelah brings customers, locations, jobs, quotations, invoices and everyday operations into one connected system.
+                The complete job, quotation, and invoice management software for service and contracting businesses. Connect your field operations to your back office in one system.
               </p>
               <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
                 <Link href="/contact" className="w-full rounded-md bg-[#0b1f3a] px-8 py-3.5 text-center text-sm font-medium text-white transition-colors hover:bg-[#0a1526] sm:w-auto">
@@ -52,8 +52,31 @@ export default function Home() {
                 </div>
                 {/* Ensure dash-hero.png is in your public/ folder */}
                 <div className="relative aspect-[16/9] w-full bg-white">
-                  <Image src="/dash-hero.png" alt="Ovelah ERP Interface" fill className="object-cover" priority />
+                  <Image 
+                    src="/dash-hero.png" 
+                    alt="Ovelah ERP dashboard showing active jobs, locations, and financial overview" 
+                    fill 
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 1200px"
+                    className="object-cover" 
+                    priority 
+                  />
                 </div>
+              </div>
+            </div>
+            
+            {/* Why Trust Ovelah Strip (Task 9) */}
+            <div className="mt-12 flex flex-col items-center justify-center gap-6 border-t border-[#e7e7e4] pt-8 sm:flex-row sm:gap-12 text-sm font-medium text-[#6b6b6b]">
+              <div className="flex items-center gap-2">
+                <svg className="h-5 w-5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
+                Tested in Live Commercial Operations
+              </div>
+              <div className="flex items-center gap-2">
+                <svg className="h-5 w-5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
+                Secure Encrypted Architecture
+              </div>
+              <div className="flex items-center gap-2">
+                <svg className="h-5 w-5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
+                No Enterprise Bloat
               </div>
             </div>
           </Container>
@@ -75,7 +98,15 @@ export default function Home() {
                 </Link>
               </div>
               <div className="lg:w-1/3">
-                <Image src="/infinity-logo.png" alt="Infinity Logo" width={300} height={150} className="object-contain" />
+                <Image 
+                  src="/infinity-logo.png" 
+                  alt="Infinity Engineering Solutions corporate logo" 
+                  width={300} 
+                  height={150} 
+                  sizes="(max-width: 768px) 100vw, 300px"
+                  className="object-contain" 
+                  loading="lazy"
+                />
               </div>
             </div>
           </Container>
@@ -143,7 +174,14 @@ export default function Home() {
                 </p>
               </div>
               <div className="lg:w-1/2 relative aspect-video w-full rounded-xl border border-[#e7e7e4] bg-[#f7f7f5] overflow-hidden shadow-lg">
-                <Image src="/ui-jobs.png" alt="Ovelah Jobs UI" fill className="object-cover" />
+                <Image 
+                  src="/ui-jobs.png" 
+                  alt="Ovelah Job Management interface showing site coordinates and task lists" 
+                  fill 
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover" 
+                  loading="lazy"
+                />
               </div>
             </div>
 
@@ -152,11 +190,25 @@ export default function Home() {
               <div className="lg:w-1/2 w-full flex flex-col">
                 {/* Background image slightly offset to the left */}
                 <div className="relative aspect-video w-[85%] rounded-xl border border-[#e7e7e4] bg-[#f7f7f5] overflow-hidden shadow-sm self-start">
-                  <Image src="/ui-quotes_1.png" alt="Ovelah Quotation Setup" fill className="object-cover" />
+                  <Image 
+                    src="/ui-quotes_1.png" 
+                    alt="Ovelah Quotation builder interface showing parts and labor estimation" 
+                    fill 
+                    sizes="(max-width: 768px) 85vw, 40vw"
+                    className="object-cover" 
+                    loading="lazy"
+                  />
                 </div>
                 {/* Foreground image overlapping and pulled to the right */}
                 <div className="relative aspect-video w-[85%] rounded-xl border border-[#e7e7e4] bg-white overflow-hidden shadow-2xl self-end -mt-[20%]">
-                  <Image src="/ui-quotes_2.png" alt="Ovelah Quotation Output" fill className="object-cover" />
+                  <Image 
+                    src="/ui-quotes_2.png" 
+                    alt="Generated professional quotation PDF output from Ovelah" 
+                    fill 
+                    sizes="(max-width: 768px) 85vw, 40vw"
+                    className="object-cover" 
+                    loading="lazy"
+                  />
                 </div>
               </div>
               <div className="lg:w-1/2 lg:pl-12">
@@ -202,20 +254,20 @@ export default function Home() {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
               <div>
-                <h3 className="text-xl font-semibold text-[#0a0a0a] mb-4">Connected Workflows</h3>
-                <p className="text-[#6b6b6b] leading-relaxed">Customers, locations, jobs, quotations and invoices are not isolated modules—they work together seamlessly.</p>
+                <h3 className="text-xl font-semibold text-[#0a0a0a] mb-4">Quote to Cash in One Flow</h3>
+                <p className="text-[#6b6b6b] leading-relaxed">Stop re-entering data. Convert a signed quotation directly into a scheduled job, and a completed service report into an invoice with zero data loss.</p>
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-[#0a0a0a] mb-4">Operational Clarity</h3>
-                <p className="text-[#6b6b6b] leading-relaxed">Give teams in the field and management in the office a single, definitive view of what is happening.</p>
+                <h3 className="text-xl font-semibold text-[#0a0a0a] mb-4">Live Financial Visibility</h3>
+                <p className="text-[#6b6b6b] leading-relaxed">Know exactly which projects are profitable. Track real-time labor costs, physical asset deployment, and outstanding invoices before the month ends.</p>
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-[#0a0a0a] mb-4">Built Around Real Work</h3>
-                <p className="text-[#6b6b6b] leading-relaxed">Designed specifically for environments where technical work happens in the real world, not just behind a desk.</p>
+                <h3 className="text-xl font-semibold text-[#0a0a0a] mb-4">Site-Specific Context</h3>
+                <p className="text-[#6b6b6b] leading-relaxed">Field teams arrive prepared. Every dispatch includes exact map coordinates, historical maintenance records, and required materials for that specific location.</p>
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-[#0a0a0a] mb-4">Practical Software</h3>
-                <p className="text-[#6b6b6b] leading-relaxed">We focus on useful, reliable workflows rather than unnecessary enterprise complexity.</p>
+                <h3 className="text-xl font-semibold text-[#0a0a0a] mb-4">Zero Enterprise Bloat</h3>
+                <p className="text-[#6b6b6b] leading-relaxed">Deploy in days, not months. We stripped away the confusing enterprise menus to give you exactly what service businesses need to operate, without the learning curve.</p>
               </div>
             </div>
           </Container>

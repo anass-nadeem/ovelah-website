@@ -69,8 +69,9 @@ export default function InfinityCaseStudy() {
               <div className="relative h-[120px] w-[260px] md:h-[160px] md:w-[320px] lg:h-[180px] lg:w-[360px]">
                 <Image
                   src="/infinity-logo.png"
-                  alt="Infinity Engineering Solutions Logo"
+                  alt="Infinity Engineering Solutions Corporate Logo"
                   fill
+                  sizes="(max-width: 768px) 260px, (max-width: 1024px) 320px, 360px"
                   className="object-contain object-left md:object-center"
                   priority
                 />
@@ -120,31 +121,65 @@ export default function InfinityCaseStudy() {
             {/* Right Column (Deep Dive Content) */}
             <article className="lg:w-2/3">
               <div className="prose prose-lg max-w-none text-[#6b6b6b]">
+                
+                {/* 1. The Challenge */}
+                <h2 className="mb-6 text-2xl font-semibold tracking-tight text-[#0a0a0a] md:text-3xl">
+                  The Challenge: Managing Scale Across Multiple Sites
+                </h2>
+                <p className="mb-12 text-base leading-relaxed">
+                  Before adopting Ovelah, Infinity Engineering Solutions faced the classic bottlenecks of a rapidly growing maintenance operation. Managing complex HVAC and electrical contracts across multiple geographic sites—such as various KFC branch locations—required endless coordination. Dispatching was reliant on fragmented WhatsApp threads, job histories were scattered across spreadsheets, and translating completed field work into accurate, timely invoices caused critical cash-flow delays.
+                </p>
+
+                {/* 2. The Solution */}
                 <h2 className="mb-8 text-2xl font-semibold tracking-tight text-[#0a0a0a] md:text-3xl">
-                  The Operational Engine
+                  The Solution: One Operational Engine
                 </h2>
                 
                 <div className="mb-12 flex flex-col gap-8">
                   <div>
-                    <h3 className="mb-2 text-xl font-semibold text-[#0b1f3a]">Clients & Locations</h3>
-                    <p className="text-base leading-relaxed">Rather than relying on disconnected spreadsheets or fragmented WhatsApp threads, all customers and their individual geographic sites are organized natively in one centralized database. For a company managing operations across multiple KFC branches or hospital wings, this means field teams always have exact coordinates, site-specific requirements, and historical maintenance data at their fingertips before they even arrive on-site.</p>
+                    <h3 className="mb-2 text-xl font-semibold text-[#0b1f3a]">Site-Specific Dispatching</h3>
+                    <p className="text-base leading-relaxed">Instead of relying on disconnected spreadsheets, all customers and their individual geographic sites are organized natively in Ovelah. Field teams arrive at the exact coordinates with site-specific requirements and historical maintenance data already loaded on their devices.</p>
                   </div>
 
                   <div>
-                    <h3 className="mb-2 text-xl font-semibold text-[#0b1f3a]">Jobs & Service Reports</h3>
-                    <p className="text-base leading-relaxed">Service requests, assigned maintenance work, and completed jobs are tracked from inception to resolution. This creates an unbroken chain of custody for every task. Management never has to guess the status of a deployment, and technicians can log specific interventions, parts used, and hours worked. The result is a transparent system that guarantees accountability and provides irrefutable proof of work for the client.</p>
+                    <h3 className="mb-2 text-xl font-semibold text-[#0b1f3a]">Unbroken Chain of Custody</h3>
+                    <p className="text-base leading-relaxed">Service requests, assigned maintenance work, and completed jobs are tracked from inception to resolution. Technicians log specific interventions, parts used, and hours worked, providing irrefutable proof of work for the client.</p>
                   </div>
 
                   <div>
-                    <h3 className="mb-2 text-xl font-semibold text-[#0b1f3a]">Quotations & Invoices</h3>
-                    <p className="text-base leading-relaxed">Financial documentation is generated directly against the specific scope of work performed. Once a job is marked complete, the service documentation directly informs the final invoicing process. By tightly coupling the operational work with the financial billing, Ovelah prevents revenue leakage from forgotten parts or undocumented labor, drastically accelerating the cash conversion cycle.</p>
-                  </div>
-
-                  <div>
-                    <h3 className="mb-2 text-xl font-semibold text-[#0b1f3a]">Assets, Expenses & Credit</h3>
-                    <p className="text-base leading-relaxed">Running a maintenance operation involves significant overhead beyond just labor. Physical equipment assets, fleet vehicles, and job-specific out-of-pocket expenses are tracked seamlessly within the platform. Furthermore, outstanding customer balances and real-time credit positions remain completely visible to management. This ensures that scheduling and financial decisions are never made in a vacuum, providing a holistic view of the company's profitability.</p>
+                    <h3 className="mb-2 text-xl font-semibold text-[#0b1f3a]">Zero-Leakage Invoicing</h3>
+                    <p className="text-base leading-relaxed">Financial documentation is generated directly against the specific scope of work performed. By tightly coupling the operational work with the financial billing, Ovelah prevents revenue leakage from forgotten parts or undocumented labor.</p>
                   </div>
                 </div>
+
+                {/* 3. The Results (Metrics) */}
+                <div className="my-16 rounded-2xl bg-[#0b1f3a] p-8 text-white shadow-xl md:p-12">
+                  <h3 className="mb-8 text-xl font-semibold">The Impact on Operations</h3>
+                  <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+                    <div className="flex flex-col border-l-2 border-white/20 pl-4">
+                      <span className="text-4xl font-bold tracking-tight mb-2">[ADD METRIC]%</span>
+                      <span className="text-sm text-white/80 leading-snug">reduction in unbilled field materials</span>
+                    </div>
+                    <div className="flex flex-col border-l-2 border-white/20 pl-4">
+                      <span className="text-4xl font-bold tracking-tight mb-2">[ADD METRIC] Days</span>
+                      <span className="text-sm text-white/80 leading-snug">faster quotation to invoice cycle</span>
+                    </div>
+                    <div className="flex flex-col border-l-2 border-white/20 pl-4">
+                      <span className="text-4xl font-bold tracking-tight mb-2">[ADD METRIC] Hrs</span>
+                      <span className="text-sm text-white/80 leading-snug">saved per week on administrative dispatch</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Testimonial Slot */}
+                <blockquote className="my-16 border-l-4 border-blue-600 pl-6 italic text-[#0a0a0a]">
+                  <p className="mb-4 text-xl leading-relaxed">
+                    "[CONFIRM QUOTE: Ovelah fundamentally changed how we track our field engineers. We no longer lose money on forgotten parts, and our clients appreciate the transparent service histories.]"
+                  </p>
+                  <footer className="text-sm font-semibold not-italic text-[#6b6b6b]">
+                    — [ADD NAME], [ADD TITLE], Infinity Engineering Solutions
+                  </footer>
+                </blockquote>
 
                 {/* Vertical Process Timeline */}
                 <div className="mt-16 border-t border-[#e7e7e4] pt-16">
