@@ -8,12 +8,12 @@ export default function IndustriesPage() {
     {
       title: "Engineering & Maintenance",
       desc: "Manage ongoing service contracts, dispatch specialized field teams, and track complex technical documentation across long-term client engagements.",
-      slug: "/industries/engineering-maintenance" 
+      slug: "/industries/engineering-maintenance"
     },
     {
       title: "HVAC & Electrical",
       desc: "Track physical equipment assets, manage recurring inspection schedules, and generate accurate quotations for highly technical installations.",
-      slug: "/industries/engineering-maintenance"
+      slug: "/industries/hvac-electrical"
     },
     {
       title: "Facility Management",

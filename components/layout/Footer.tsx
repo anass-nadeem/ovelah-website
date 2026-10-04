@@ -25,8 +25,8 @@ export default function Footer() {
             <ul className="flex flex-col gap-3">
               <li><Link href="/erp" className="text-sm text-[#6b6b6b] hover:text-[#0a0a0a]">Ovelah ERP</Link></li>
               <li><Link href="/platform" className="text-sm text-[#6b6b6b] hover:text-[#0a0a0a]">Platform Overview</Link></li>
-              <li><Link href="/solutions" className="text-sm text-[#6b6b6b] hover:text-[#0a0a0a]">Job Management</Link></li>
-              <li><Link href="/solutions" className="text-sm text-[#6b6b6b] hover:text-[#0a0a0a]">Quotation & Billing</Link></li>
+              <li><Link href="/solutions/job-management" className="text-sm text-[#6b6b6b] hover:text-[#0a0a0a]">Job Management</Link></li>
+              <li><Link href="/solutions/quotation-billing" className="text-sm text-[#6b6b6b] hover:text-[#0a0a0a]">Quotation & Billing</Link></li>
             </ul>
           </div>
 
@@ -56,8 +56,8 @@ export default function Footer() {
         <div className="mt-20 flex flex-col items-center justify-between border-t border-[#e7e7e4] pt-8 md:flex-row">
           <p className="text-sm text-[#6b6b6b]">© {new Date().getFullYear()} Ovelah. All rights reserved.</p>
           <div className="mt-4 flex gap-6 md:mt-0">
-            <Link href="#" className="text-sm text-[#6b6b6b] hover:text-[#0a0a0a]">Privacy Policy</Link>
-            <Link href="#" className="text-sm text-[#6b6b6b] hover:text-[#0a0a0a]">Terms of Service</Link>
+            <Link href="/privacy" className="text-sm text-[#6b6b6b] hover:text-[#0a0a0a]">Privacy Policy</Link>
+            <Link href="/terms" className="text-sm text-[#6b6b6b] hover:text-[#0a0a0a]">Terms of Service</Link>
           </div>
         </div>
       </Container>

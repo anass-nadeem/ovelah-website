@@ -3,6 +3,13 @@ import Footer from "@/components/layout/Footer";
 import Container from "@/components/ui/Container";
 import Link from "next/link";
 import Image from "next/image";
+import { constructMetadata } from "@/lib/seo";
+
+export const metadata = constructMetadata({
+  title: "Ovelah | Business Operations Software for Service Teams",
+  description: "Ovelah brings customers, locations, jobs, quotations, invoices and everyday operations into one connected system for service and maintenance businesses.",
+  url: "https://ovelah.com/",
+});
 
 export default function Home() {
   return (
