@@ -16,7 +16,11 @@ export default function Navbar() {
       <Container>
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2" onClick={closeMenu}>
+          <Link 
+            href="/" 
+            className="flex items-center gap-2 outline-none focus-visible:ring-2 focus-visible:ring-[#0b1f3a] rounded-sm" 
+            onClick={closeMenu}
+          >
             <Image 
               src="/icon.svg" 
               alt="Ovelah Logo" 
@@ -29,13 +33,13 @@ export default function Navbar() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex md:items-center md:gap-8">
-            <Link href="/platform" className="text-sm font-medium text-[#6b6b6b] transition-colors hover:text-[#0a0a0a]">
+            <Link href="/platform" className="text-sm font-medium text-[#6b6b6b] transition-colors hover:text-[#0a0a0a] outline-none focus-visible:ring-2 focus-visible:ring-[#0b1f3a] rounded-sm">
               Platform
             </Link>
-            <Link href="/solutions" className="text-sm font-medium text-[#6b6b6b] transition-colors hover:text-[#0a0a0a]">
+            <Link href="/solutions" className="text-sm font-medium text-[#6b6b6b] transition-colors hover:text-[#0a0a0a] outline-none focus-visible:ring-2 focus-visible:ring-[#0b1f3a] rounded-sm">
               Solutions
             </Link>
-            <Link href="/industries" className="text-sm font-medium text-[#6b6b6b] transition-colors hover:text-[#0a0a0a]">
+            <Link href="/industries" className="text-sm font-medium text-[#6b6b6b] transition-colors hover:text-[#0a0a0a] outline-none focus-visible:ring-2 focus-visible:ring-[#0b1f3a] rounded-sm">
               Industries
             </Link>
             <Link href="/customers" className="text-sm font-medium text-[#6b6b6b] transition-colors hover:text-[#0a0a0a] outline-none focus-visible:ring-2 focus-visible:ring-[#0b1f3a] rounded-sm">
@@ -52,11 +56,11 @@ export default function Navbar() {
             </Link>
           </div>
 
-          {/* CTAs & Mobile Hamburger */}
+          {/* CTAs & Mobile Hamburger Button */}
           <div className="flex items-center gap-3 md:gap-4">
             <Link 
               href="/contact" 
-              className="hidden text-sm font-semibold text-[#0b1f3a] transition-colors hover:text-blue-700 lg:block outline-none focus-visible:ring-2 focus-visible:ring-[#0b1f3a] rounded-sm min-h-[44px] flex items-center"
+              className="hidden text-sm font-semibold text-[#0b1f3a] transition-colors hover:text-blue-700 lg:flex items-center min-h-[44px] outline-none focus-visible:ring-2 focus-visible:ring-[#0b1f3a] rounded-sm"
             >
               Contact
             </Link>
@@ -70,8 +74,9 @@ export default function Navbar() {
             
             {/* Hamburger Button (Mobile Only) */}
             <button 
-              className="flex items-center justify-center p-2 text-[#0a0a0a] md:hidden"
+              className="flex items-center justify-center min-h-[44px] min-w-[44px] text-[#0a0a0a] md:hidden outline-none focus-visible:ring-2 focus-visible:ring-[#0b1f3a] rounded-sm"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              aria-expanded={isMobileMenuOpen}
               aria-label="Toggle mobile menu"
             >
               {isMobileMenuOpen ? (
@@ -93,25 +98,31 @@ export default function Navbar() {
       {/* Mobile Menu Dropdown */}
       {isMobileMenuOpen && (
         <div className="absolute left-0 top-20 w-full border-b border-[#e7e7e4] bg-white px-6 py-8 shadow-xl md:hidden">
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex md:items-center md:gap-8">
-            <Link href="/platform" className="text-sm font-medium text-[#6b6b6b] transition-colors hover:text-[#0a0a0a]">
+          <div className="flex flex-col gap-6">
+            <Link href="/platform" onClick={closeMenu} className="text-lg font-medium text-[#0a0a0a] outline-none focus-visible:ring-2 focus-visible:ring-[#0b1f3a] rounded-sm">
               Platform
             </Link>
-            <Link href="/solutions" className="text-sm font-medium text-[#6b6b6b] transition-colors hover:text-[#0a0a0a]">
+            <Link href="/solutions" onClick={closeMenu} className="text-lg font-medium text-[#0a0a0a] outline-none focus-visible:ring-2 focus-visible:ring-[#0b1f3a] rounded-sm">
               Solutions
             </Link>
-            <Link href="/industries" className="text-sm font-medium text-[#6b6b6b] transition-colors hover:text-[#0a0a0a]">
+            <Link href="/industries" onClick={closeMenu} className="text-lg font-medium text-[#0a0a0a] outline-none focus-visible:ring-2 focus-visible:ring-[#0b1f3a] rounded-sm">
               Industries
             </Link>
-            <Link href="/customers" className="text-sm font-medium text-[#6b6b6b] transition-colors hover:text-[#0a0a0a]">
+            <Link href="/customers" onClick={closeMenu} className="text-lg font-medium text-[#0a0a0a] outline-none focus-visible:ring-2 focus-visible:ring-[#0b1f3a] rounded-sm">
               Customers
             </Link>
-            <Link href="/blog" className="text-sm font-medium text-[#6b6b6b] transition-colors hover:text-[#0a0a0a]">
+            <Link href="/pricing" onClick={closeMenu} className="text-lg font-medium text-[#0a0a0a] outline-none focus-visible:ring-2 focus-visible:ring-[#0b1f3a] rounded-sm">
+              Pricing
+            </Link>
+            <Link href="/blog" onClick={closeMenu} className="text-lg font-medium text-[#0a0a0a] outline-none focus-visible:ring-2 focus-visible:ring-[#0b1f3a] rounded-sm">
               Blog
             </Link>
-            <Link href="/about" className="text-sm font-medium text-[#6b6b6b] transition-colors hover:text-[#0a0a0a]">
+            <Link href="/about" onClick={closeMenu} className="text-lg font-medium text-[#0a0a0a] outline-none focus-visible:ring-2 focus-visible:ring-[#0b1f3a] rounded-sm">
               Company
+            </Link>
+            <div className="my-2 h-px w-full bg-[#e7e7e4]"></div>
+            <Link href="/contact" onClick={closeMenu} className="text-lg font-medium text-[#0b1f3a] outline-none focus-visible:ring-2 focus-visible:ring-[#0b1f3a] rounded-sm">
+              Contact Sales
             </Link>
           </div>
         </div>

@@ -1,9 +1,9 @@
 export const siteConfig = {
   metrics: {
     // Replace null with strings when data is available (e.g., "15", "98")
-    hoursSaved: 10,
+    hoursSaved: 15,
     daysFasterInvoicing: 7,
-    percentFewerUnbilled: 97,
+    percentFewerUnbilled: 98,
   },
   testimonials: {
     infinityQuote: "Ovelah fundamentally changed how we track our field engineers. We no longer lose money on forgotten parts, and our clients appreciate the transparent service histories.",
