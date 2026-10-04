@@ -21,11 +21,11 @@ export const siteConfig = {
   },
   about: {
     // Hide the Origin section until the founder writes their story
-    founderStory: null, 
+    founderStory: null as string | null, 
     
     // Timeline items. Add new ones or change status to 'planned'/'completed'
     timeline: [
-      { date: "15 June, 2026", title: "Platform live in daily operations", status: "completed" },
+      { date: "[ADD DATE]", title: "Platform live in daily operations", status: "completed" },
       // { date: "[ADD DATE]", title: "Public Launch", status: "planned" }
     ],
     
@@ -35,6 +35,6 @@ export const siteConfig = {
     ],
     
     // Used in the 'Where We Are' section. E.g., "+92 300 0000000"
-    contactPhone: null, 
+    contactPhone: null as string | null 
   }
 };

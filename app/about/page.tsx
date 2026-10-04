@@ -237,7 +237,7 @@ export default function AboutPage() {
                 <a href="mailto:contact@ovelah.com" className="text-base font-semibold text-[#0b1f3a] hover:underline underline-offset-4 outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#0b1f3a] rounded-sm">
                   contact@ovelah.com
                 </a>
-                {about.contactPhone && (
+                {typeof about.contactPhone === "string" && (
                   <a href={`tel:${about.contactPhone.replace(/\s+/g, '')}`} className="text-base font-medium text-[#6b6b6b] hover:text-[#0a0a0a] transition-colors outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#0b1f3a] rounded-sm">
                     {about.contactPhone}
                   </a>
