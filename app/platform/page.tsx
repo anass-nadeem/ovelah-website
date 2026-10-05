@@ -82,8 +82,8 @@ export default function PlatformPage() {
                 <p className="text-lg leading-relaxed text-[#6b6b6b] mb-8">
                   Ovelah acts as your source of truth for where work happens and who it is for. Every job is tied to a specific client and a precise geographic location, ensuring field teams always arrive with the right context.
                 </p>
-                <Link href="/erp" className="text-sm font-semibold text-[#0b1f3a] hover:underline underline-offset-4">
-                  Explore Ovelah ERP →
+                <Link href="/product" className="text-sm font-semibold text-[#0b1f3a] hover:underline underline-offset-4">
+                  Explore the Ovelah platform →
                 </Link>
               </div>
               <div className="lg:w-1/2 relative aspect-video w-full rounded-xl border border-[#e7e7e4] bg-[#f7f7f5] overflow-hidden">

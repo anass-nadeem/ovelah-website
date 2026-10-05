@@ -31,7 +31,7 @@ export default function TermsOfServicePage() {
 
             <h2 className="mb-4 mt-12 text-2xl font-semibold text-[#0a0a0a]">1. Agreement and Acceptance</h2>
             <p>
-              These Terms of Service ("Terms") are a binding agreement between you (and the business you represent, "Customer", "you") and Ovelah, based in Islamabad, Pakistan ("Ovelah", "we", "us"). They govern your access to and use of ovelah.com (the "Website") and the Ovelah software and related services, including Ovelah ERP (together, the "Services").
+              These Terms of Service ("Terms") are a binding agreement between you (and the business you represent, "Customer", "you") and Ovelah, based in Islamabad, Pakistan ("Ovelah", "we", "us"). They govern your access to and use of ovelah.com (the "Website") and the Ovelah software and related services, including the Ovelah platform (together, the "Services").
             </p>
             <p>
               By creating an account, starting a free trial, subscribing, or otherwise using the Services, you agree to these Terms and to our Privacy Policy. If you accept on behalf of a company, you confirm that you have authority to bind that company. If you do not agree, do not use the Services.

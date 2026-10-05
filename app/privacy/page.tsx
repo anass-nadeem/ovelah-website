@@ -36,7 +36,7 @@ export default function PrivacyPolicyPage() {
             <ul className="list-disc space-y-2 pl-6">
               <li>visit our website at ovelah.com ("Website");</li>
               <li>request a demo, contact us, or start a free trial; and</li>
-              <li>use the Ovelah software, including the Ovelah ERP platform ("Services").</li>
+              <li>use the Ovelah software, including the Ovelah platform ("Services").</li>
             </ul>
             <p>
               By using the Website or the Services, you acknowledge that you have read this Policy. If you do not agree with it, please do not use them.

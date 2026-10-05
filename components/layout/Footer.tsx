@@ -23,7 +23,7 @@ export default function Footer() {
           <div>
             <h4 className="mb-4 text-xs font-semibold uppercase tracking-wider text-[#0a0a0a]">Product</h4>
             <ul className="flex flex-col gap-3">
-              <li><Link href="/erp" className="text-sm text-[#6b6b6b] hover:text-[#0a0a0a]">Operations Platform</Link></li>
+              <li><Link href="/product" className="text-sm text-[#6b6b6b] hover:text-[#0a0a0a]">Platform</Link></li>
               <li><Link href="/platform" className="text-sm text-[#6b6b6b] hover:text-[#0a0a0a]">Platform Architecture</Link></li>
               <li><Link href="/solutions/job-management" className="text-sm text-[#6b6b6b] hover:text-[#0a0a0a]">Job Management</Link></li>
               <li><Link href="/solutions/quotation-billing" className="text-sm text-[#6b6b6b] hover:text-[#0a0a0a]">Quotation & Billing</Link></li>

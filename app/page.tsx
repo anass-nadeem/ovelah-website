@@ -11,7 +11,7 @@ import { siteConfig } from "@/lib/config/placeholders";
 
 export const metadata = constructMetadata({
   title: "Ovelah | Job, Quotation & Invoice Software",
-  description: "Ovelah connects clients, locations, jobs, quotations and invoices in one system for service and contracting businesses. Start your 1-month free trial.",
+  description: "Ovelah is business operations management software for service and maintenance companies. It connects clients, locations, jobs, quotations and invoices in one system.",
   url: "https://ovelah.com/",
 });
 
@@ -85,7 +85,7 @@ export default function Home() {
                 Run every job, quote and invoice from one connected system.
               </h1>
               <p className="mx-auto mb-10 max-w-2xl text-lg leading-relaxed text-[#6b6b6b] md:text-xl">
-                Ovelah links your clients, locations, jobs, quotations and invoices, so field teams and the office always work from the same facts.
+                Ovelah is business operations management software for service and maintenance companies. It connects clients, locations, jobs, quotations and invoices in one system.
               </p>
               <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
                 <Link href="/contact" className="min-h-[44px] w-full rounded-md bg-[#0b1f3a] px-8 py-3 text-center text-sm font-medium text-white transition-colors hover:bg-[#0a1526] outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#0b1f3a] sm:w-auto">
@@ -110,7 +110,7 @@ export default function Home() {
                 <div className="relative aspect-[16/9] w-full bg-white">
                   <Image 
                     src="/dash-hero.png" 
-                    alt="Ovelah software dashboard showing active jobs and financial records" 
+                    alt="Ovelah dashboard showing jobs, quotations and balances" 
                     fill 
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 1000px"
                     className="object-cover object-top" 

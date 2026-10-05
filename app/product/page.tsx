@@ -54,7 +54,7 @@ export default function ERPPage() {
                 Flagship Product
               </p>
               <h1 className="mb-8 text-4xl font-semibold tracking-tight text-[#0a0a0a] md:text-6xl lg:text-7xl">
-                Run your business with the Ovelah Platform.
+                Run your business with the Ovelah platform.
               </h1>
               <p className="mx-auto mb-10 max-w-2xl text-lg leading-relaxed text-[#6b6b6b] md:text-xl">
                 A unified system designed specifically for service and maintenance businesses. Everything you need to manage the lifecycle of a job.
@@ -77,11 +77,11 @@ export default function ERPPage() {
                   Command Central.
                 </h2>
                 <p className="text-lg leading-relaxed text-[#6b6b6b]">
-                  The Ovelah ERP dashboard provides immediate operational visibility. See outstanding balances, active jobs, and recent quotations the second you log in.
+                  The Ovelah dashboard provides immediate operational visibility. See outstanding balances, active jobs, and recent quotations the second you log in.
                 </p>
               </div>
               <div className="lg:w-2/3 relative aspect-video w-full rounded-xl border border-[#e7e7e4] bg-[#f7f7f5] overflow-hidden shadow-lg">
-                <Image src="/dash-hero.png" alt="Ovelah ERP Dashboard" fill className="object-cover" priority />
+                <Image src="/dash-hero.png" alt="Ovelah Platform Dashboard" fill className="object-cover" priority />
               </div>
             </div>
           </Container>
