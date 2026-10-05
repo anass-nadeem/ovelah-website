@@ -36,5 +36,15 @@ export const siteConfig = {
     
     // Used in the 'Where We Are' section. E.g., "+92 300 0000000"
     contactPhone: null as string | null 
+  },
+  pricing: {
+    // E.g., "20%"
+    annualDiscountPercent: null as string | null,
+    // E.g., "Includes up to 3 dispatchers"
+    includedUsers: null as string | null,
+    // E.g., "Unlimited locations and jobs"
+    includedLocations: null as string | null,
+    // E.g., true (Shows a note about PKR invoicing)
+    localPkrBilling: null as boolean | null,
   }
 };
