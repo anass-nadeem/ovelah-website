@@ -9,8 +9,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/platform',
     '/product',
     '/solutions',
-    '/solutions/job-management',
-    '/solutions/quotation-billing',
     '/industries',
     '/industries/engineering-maintenance',
     '/industries/hvac-electrical',

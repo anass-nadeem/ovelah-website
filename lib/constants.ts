@@ -1,6 +1,6 @@
 export const BRAND = {
   name: "Ovelah",
-  product: "Ovelah ERP",
+  product: "Ovelah",
   email: "hello@ovelah.com",
 };
 

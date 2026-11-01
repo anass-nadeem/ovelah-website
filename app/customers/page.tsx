@@ -3,6 +3,13 @@ import Footer from "@/components/layout/Footer";
 import Container from "@/components/ui/Container";
 import Link from "next/link";
 import Image from "next/image";
+import { constructMetadata } from "@/lib/seo";
+
+export const metadata = constructMetadata({
+  title: "Customers | Ovelah",
+  description: "See how a working engineering and maintenance company uses Ovelah to manage clients, locations, jobs, quotations and invoices.",
+  url: "https://ovelah.com/customers",
+});
 
 export default function CustomersPage() {
   return (

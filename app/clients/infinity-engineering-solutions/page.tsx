@@ -4,16 +4,6 @@ import Container from "@/components/ui/Container";
 import Image from "next/image";
 
 export default function InfinityCaseStudy() {
-  const clients = [
-    "KFC Pakistan North",
-    "Transworld",
-    "National Police Academy",
-    "Gubloo Technologies",
-    "Cosmesurge Hospital",
-    "FIA Academy",
-    "NACTA Head office Islamabad"
-  ];
-
   const workflowSteps = [
     { 
       title: "Client & Location", 
@@ -102,19 +92,6 @@ export default function InfinityCaseStudy() {
                   <p className="text-sm font-medium text-[#0b1f3a]">Engineering & Maintenance</p>
                 </div>
 
-                <div>
-                  <p className="mb-4 text-xs font-semibold text-[#6b6b6b]">Key Clients Managed via Ovelah</p>
-                  <ul className="flex flex-col gap-3">
-                    {clients.map((client) => (
-                      <li key={client} className="flex items-center gap-3 text-sm font-medium text-[#0b1f3a]">
-                        <svg className="h-2 w-2 shrink-0 fill-[#6b6b6b]" viewBox="0 0 8 8">
-                          <circle cx="4" cy="4" r="4" />
-                        </svg>
-                        {client}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
               </div>
             </aside>
 
@@ -127,7 +104,7 @@ export default function InfinityCaseStudy() {
                   The Challenge: Managing Scale Across Multiple Sites
                 </h2>
                 <p className="mb-12 text-base leading-relaxed">
-                  Before adopting Ovelah, Infinity Engineering Solutions faced the classic bottlenecks of a rapidly growing maintenance operation. Managing complex HVAC and electrical contracts across multiple geographic sites—such as various KFC branch locations—required endless coordination. Dispatching was reliant on fragmented WhatsApp threads, job histories were scattered across spreadsheets, and translating completed field work into accurate, timely invoices caused critical cash-flow delays.
+                  Before adopting Ovelah, Infinity Engineering Solutions faced the classic bottlenecks of a rapidly growing maintenance operation. Managing complex HVAC and electrical contracts across multiple geographic sites—such as multi-branch commercial sites—required endless coordination. Dispatching was reliant on fragmented WhatsApp threads, job histories were scattered across spreadsheets, and translating completed field work into accurate, timely invoices caused critical cash-flow delays.
                 </p>
 
                 {/* 2. The Solution */}
@@ -177,7 +154,7 @@ export default function InfinityCaseStudy() {
                     "Ovelah fundamentally changed how we track our field engineers. We no longer lose money on forgotten parts, and our clients appreciate the transparent service histories."
                   </p>
                   <footer className="text-sm font-semibold not-italic text-[#6b6b6b]">
-                    — Abdullah, CEO, Infinity Engineering Solutions
+                    — Abdullah, Infinity Engineering Solutions
                   </footer>
                 </blockquote>
 

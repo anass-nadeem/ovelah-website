@@ -110,7 +110,7 @@ export default function HvacElectricalPage() {
                   <Image src="/infinity-logo.png" alt="Infinity Logo" fill className="object-contain object-left brightness-0 invert" />
                 </div>
                 <p className="mb-8 text-xl leading-relaxed text-white/90">
-                  "Infinity Engineering Solutions uses Ovelah to manage jobs, quotations, invoicing and operational workflows across its commercial HVAC and electrical maintenance operations, including multi-branch networks like KFC Pakistan North."
+                  "Infinity Engineering Solutions uses Ovelah to manage jobs, quotations, invoicing and operational workflows across its commercial HVAC and electrical maintenance operations, including multi-branch client networks."
                 </p>
                 <Link href="/clients/infinity-engineering-solutions" className="inline-flex items-center text-sm font-semibold text-white transition-colors hover:text-white/70">
                   Read the Case Study <span className="ml-2">→</span>

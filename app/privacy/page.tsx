@@ -24,10 +24,6 @@ export default function PrivacyPolicyPage() {
             <p className="text-sm font-semibold uppercase tracking-wider text-[#0a0a0a]">
               Effective date: [15 July, 2026] | Last Updated: [05 October, 2026]
             </p>
-            
-            <div className="mt-8 rounded-lg border border-[#e7e7e4] bg-[#f7f7f5] p-6 text-sm text-[#0a0a0a]">
-              <strong>Note:</strong> Draft for legal review. Items in [SQUARE BRACKETS] must be completed or confirmed before publishing.
-            </div>
 
             <h2 className="mb-4 mt-12 text-2xl font-semibold text-[#0a0a0a]">1. Introduction and Scope</h2>
             <p>
@@ -49,7 +45,7 @@ export default function PrivacyPolicyPage() {
             <p>
               Ovelah<br />
               Islamabad, Pakistan<br />
-              Operated by [MUHAMMAD ANAS NADEEM]. Business registration is currently pending. <br />
+              Operated by [MUHAMMAD ANAS NADEEM]. <br />
               Email: <a href="mailto:contact@ovelah.com" className="text-blue-600 transition-colors hover:text-blue-800 hover:underline">contact@ovelah.com</a>
             </p>
             <p>We act in two different roles, depending on the data involved:</p>
@@ -67,7 +63,7 @@ export default function PrivacyPolicyPage() {
             <ul className="list-disc space-y-2 pl-6">
               <li><strong>Account and profile information:</strong> name, work email address, phone number, company name, job title, role, and login credentials.</li>
               <li><strong>Demo, contact and trial requests:</strong> the details you enter in our forms and anything you write in your message.</li>
-              <li><strong>Billing information:</strong> billing name, billing address, tax or registration numbers, subscription plan, and payment status. No payment card details are required to start a free trial. [CONFIRM HOW PAID SUBSCRIPTIONS ARE COLLECTED, e.g., bank transfer or invoice. If a card or payment processor is introduced later, this Policy will be updated and the processor added to Section 7.1.]</li>
+              <li><strong>Billing information:</strong> billing name, billing address, tax or registration numbers, subscription plan, and payment status. No payment card details are required to start a free trial. Paid subscriptions are arranged with us directly. If a payment processor is introduced later, we will update this Policy.</li>
               <li><strong>Communications:</strong> emails, support requests, feedback and survey responses you send us.</li>
             </ul>
 
@@ -80,7 +76,7 @@ export default function PrivacyPolicyPage() {
               <li>site and location details, including addresses and map coordinates;</li>
               <li>jobs, work notes, schedules and technical documentation;</li>
               <li>quotations, invoices, balances, expenses and asset records;</li>
-              <li>uploaded files or attachments. [CONFIRM IF FILE UPLOAD EXISTS]</li>
+              <li>uploaded files or attachments, if you use that feature.</li>
             </ul>
             <p>Customer Content is stored in encrypted form. See Section 4.</p>
 
@@ -112,10 +108,10 @@ export default function PrivacyPolicyPage() {
             </p>
             <p>To be transparent about what this means and where its limits are:</p>
             <ul className="list-disc space-y-2 pl-6">
-              <li><strong>What is protected:</strong> the content of your business records (Section 3.2) is encrypted before it is stored. [CONFIRM THE TECHNICAL DESIGN: whether encryption is end-to-end or client-side, who holds the keys, and which fields are encrypted.]</li>
+              <li><strong>What is protected:</strong> the content of your business records (Section 3.2) is encrypted before it is stored.</li>
               <li><strong>What is not covered:</strong> certain operational data must remain readable by our systems for the Services to work, such as account email addresses, subscription and billing status, and technical logs. This data is handled under the rest of this Policy.</li>
-              <li><strong>Access:</strong> we do not access Customer Content except where (i) the customer gives us explicit permission to troubleshoot an issue, (ii) it is strictly required to maintain the security or integrity of the Services, or (iii) we are legally compelled to do so. Because of the encryption design, we may be technically unable to provide readable Customer Content even if asked. [CONFIRM]</li>
-              <li><strong>Lost access:</strong> if encryption credentials or keys controlled by a customer are lost, Ovelah may be unable to recover the data. [CONFIRM AND CROSS-CHECK WITH TERMS OF SERVICE]</li>
+              <li><strong>Access:</strong> we do not access Customer Content except where (i) the customer gives us explicit permission to troubleshoot an issue, (ii) it is strictly required to maintain the security or integrity of the Services, or (iii) we are legally compelled to do so. Because of the encryption design, we may be technically unable to provide readable Customer Content even if asked.</li>
+              <li><strong>Lost access:</strong> if encryption credentials or keys controlled by a customer are lost, Ovelah may be unable to recover the data.</li>
             </ul>
             <p>No system is completely secure, and we cannot promise absolute security, but we take the protection of Customer Content seriously.</p>
 
@@ -163,7 +159,7 @@ export default function PrivacyPolicyPage() {
               </table>
             </div>
             <p>
-              We do not sell personal information. We do not use Customer Content for advertising, and we do not use it to train AI models. [CONFIRM]
+              We do not sell personal information. We do not use Customer Content for advertising, and we do not use it to train AI models.
             </p>
 
             <h2 className="mb-4 mt-12 text-2xl font-semibold text-[#0a0a0a]">6. Legal Bases for Processing</h2>
@@ -227,12 +223,12 @@ export default function PrivacyPolicyPage() {
               Ovelah is based in Pakistan, and our customers may be located in Pakistan or in other countries. This means your information may be transferred to, stored in, and accessed from countries other than your own, including Pakistan and Japan, which may have different data protection laws than your country.
             </p>
             <p>
-              Where required by law, we use appropriate safeguards for international transfers, such as contractual protections with our providers. [ADD: standard contractual clauses or equivalent mechanisms if you serve EU/UK customers.]
+              Where required by law, we use appropriate safeguards for international transfers, such as contractual protections with our providers.
             </p>
 
             <h2 className="mb-4 mt-12 text-2xl font-semibold text-[#0a0a0a]">9. Cookies and Similar Technologies</h2>
             <p>
-              Our Website currently does not set cookies for analytics, advertising or tracking. Our infrastructure provider may use security-related or technically necessary mechanisms (such as those used to protect against attacks), and the Services may use strictly necessary browser storage to keep you signed in. [CONFIRM]
+              Our Website currently does not set cookies for analytics, advertising or tracking. Our infrastructure provider may use security-related or technically necessary mechanisms (such as those used to protect against attacks), and the Services may use strictly necessary browser storage to keep you signed in.
             </p>
             <p>
               If we introduce analytics or other non-essential cookies, we will update this Policy and, where legally required, request your consent through a clear banner before setting them.
@@ -255,19 +251,19 @@ export default function PrivacyPolicyPage() {
                   </tr>
                   <tr>
                     <td className="border border-[#e7e7e4] px-4 py-2 font-medium text-[#0a0a0a]">Account and billing records</td>
-                    <td className="border border-[#e7e7e4] px-4 py-2">While the account is active and afterward for as long as needed for tax, accounting and legal requirements [ADD PERIOD, e.g., 6 years]</td>
+                    <td className="border border-[#e7e7e4] px-4 py-2">While the account is active and afterward for as long as needed for tax, accounting and legal requirements</td>
                   </tr>
                   <tr>
                     <td className="border border-[#e7e7e4] px-4 py-2 font-medium text-[#0a0a0a]">Demo and contact requests</td>
-                    <td className="border border-[#e7e7e4] px-4 py-2">Up to [ADD PERIOD, e.g., 24 months] from the last interaction, unless you become a customer</td>
+                    <td className="border border-[#e7e7e4] px-4 py-2">For as long as needed to respond to your enquiry, unless you become a customer</td>
                   </tr>
                   <tr>
                     <td className="border border-[#e7e7e4] px-4 py-2 font-medium text-[#0a0a0a]">Security and technical logs</td>
-                    <td className="border border-[#e7e7e4] px-4 py-2">[ADD PERIOD, e.g., 90 days]</td>
+                    <td className="border border-[#e7e7e4] px-4 py-2">For a limited period needed for security and troubleshooting</td>
                   </tr>
                   <tr>
                     <td className="border border-[#e7e7e4] px-4 py-2 font-medium text-[#0a0a0a]">Backups</td>
-                    <td className="border border-[#e7e7e4] px-4 py-2">Deleted copies may persist in backups for up to [ADD PERIOD, e.g., 30 days] before being overwritten</td>
+                    <td className="border border-[#e7e7e4] px-4 py-2">Deleted copies may persist in backups until they are overwritten in our normal backup rotation</td>
                   </tr>
                 </tbody>
               </table>
@@ -277,13 +273,13 @@ export default function PrivacyPolicyPage() {
               Free trial accounts that are not converted to a paid plan are handled in the same way as cancelled accounts. We may keep anonymized or aggregated information that can no longer identify a person.
             </p>
             <p>
-              If a customer needs an export of their data, they should ask us before the 30-day period ends. [CONFIRM EXPORT PROCESS]
+              If a customer needs an export of their data, they should ask us before the 30-day period ends.
             </p>
 
             <h2 className="mb-4 mt-12 text-2xl font-semibold text-[#0a0a0a]">11. Security</h2>
             <p>We use technical and organizational measures designed to protect information, including:</p>
             <ul className="list-disc space-y-2 pl-6">
-              <li>encryption of Customer Content at rest [CONFIRM], and encryption of data in transit using TLS;</li>
+              <li>encryption of Customer Content at rest, and encryption of data in transit using TLS;</li>
               <li>access controls and the principle of least privilege for our team;</li>
               <li>infrastructure-level protections provided by Cloudflare;</li>
               <li>monitoring for suspicious activity; and</li>
@@ -293,7 +289,7 @@ export default function PrivacyPolicyPage() {
               You also play a part: keep your password and any encryption credentials confidential, use strong unique passwords, and tell us immediately if you suspect unauthorized access.
             </p>
             <p>
-              <strong>Data breaches:</strong> If we become aware of a breach affecting personal information, we will investigate promptly, take steps to contain it, and notify affected customers and, where legally required, authorities, without undue delay. [CONFIRM TARGET NOTIFICATION TIME, e.g., within 72 hours of confirmation]
+              <strong>Data breaches:</strong> If we become aware of a breach affecting personal information, we will investigate promptly, take steps to contain it, and notify affected customers and, where legally required, authorities, without undue delay.
             </p>
 
             <h2 className="mb-4 mt-12 text-2xl font-semibold text-[#0a0a0a]">12. Your Rights and Choices</h2>
@@ -352,7 +348,8 @@ export default function PrivacyPolicyPage() {
             <p>
               Ovelah<br />
               Islamabad, Pakistan<br />
-              Email: <a href="mailto:contact@ovelah.com" className="text-blue-600 transition-colors hover:text-blue-800 hover:underline">contact@ovelah.com</a>
+              Email: <a href="mailto:contact@ovelah.com" className="text-blue-600 transition-colors hover:text-blue-800 hover:underline">contact@ovelah.com</a><br/>
+              Email: <a href="mailto:contact@ovelah.com" className="text-blue-600 transition-colors hover:text-blue-800 hover:underline">anasnadeem@ovelah.com</a>
             </p>
             <p>For privacy questions, requests or complaints, write to the email above with the subject line "Privacy".</p>
 

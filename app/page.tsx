@@ -92,7 +92,7 @@ export default function Home() {
                   Request a Demo
                 </Link>
                 <Link href="/contact" className="min-h-[44px] w-full rounded-md border border-[#e7e7e4] bg-white px-8 py-3 text-center text-sm font-medium text-[#0a0a0a] transition-colors hover:bg-[#f7f7f5] outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#0b1f3a] sm:w-auto">
-                  Start free trial
+                  Request a free trial
                 </Link>
               </div>
               <p className="mt-4 text-xs text-[#6b6b6b]">1 month free. No card required.</p>
@@ -425,7 +425,7 @@ export default function Home() {
                 Request a Demo
               </Link>
               <Link href="/contact" className="min-h-[44px] w-full rounded-md border border-[#e7e7e4] bg-white px-8 py-3 text-center text-sm font-medium text-[#0a0a0a] transition-colors hover:bg-[#f7f7f5] outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#0b1f3a] sm:w-auto">
-                Start free trial
+                Request a free trial
               </Link>
             </div>
           </Container>

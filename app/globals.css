@@ -83,3 +83,15 @@ a {
   background: #0b1f3a;
   color: white;
 }
+
+/* Basic reading styles for legal and article pages that use the "prose" class.
+   The typography plugin is not installed, so lists and spacing were unstyled.
+   Kept in the components layer so Tailwind utility classes can still override. */
+@layer components {
+  .prose ul { list-style: disc; padding-left: 1.5rem; margin: 1rem 0; }
+  .prose ol { list-style: decimal; padding-left: 1.5rem; margin: 1rem 0; }
+  .prose li { margin: 0.5rem 0; }
+  .prose p { margin: 1rem 0; line-height: 1.75; }
+  .prose a { text-decoration: underline; text-underline-offset: 3px; }
+  .prose table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.95rem; }
+}

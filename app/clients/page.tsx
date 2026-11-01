@@ -38,7 +38,7 @@ export default function ClientsPage() {
                     Infinity Engineering Solutions
                   </h2>
                   <p className="max-w-xl text-sm leading-relaxed text-[#6b6b6b] md:text-base">
-                    Managing engineering and maintenance operations for KFC Pakistan North with Ovelah.
+                    Managing engineering, HVAC and maintenance operations with Ovelah.
                   </p>
                 </div>
                 

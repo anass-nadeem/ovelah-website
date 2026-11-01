@@ -9,7 +9,7 @@ import FaqAccordion from "@/components/home/FaqAccordion";
 
 export const metadata = constructMetadata({
   title: "Pricing | Ovelah",
-  description: "Ovelah pricing scales with your operations, starting from $100 per month. Get a custom quote based on your team size and job volume.",
+  description: "Ovelah pricing scales with your operations, starting from $49 per month. Get a custom quote based on your team size and job volume.",
   url: "https://ovelah.com/pricing",
 });
 
@@ -21,7 +21,7 @@ export default function PricingPage() {
     applicationCategory: "BusinessApplication",
     offers: {
       "@type": "AggregateOffer",
-      lowPrice: "100",
+      lowPrice: "49",
       priceCurrency: "USD"
     }
   };
@@ -29,11 +29,11 @@ export default function PricingPage() {
   const rawFaqs = [
     { question: "Is there a free trial?", answer: "Yes, we offer a one-month free trial with no payment card required to start." },
     { question: "How is the price calculated?", answer: "Pricing is calculated based on three factors: the number of active users, your operational volume (locations and jobs), and any custom implementation or training needs." },
-    { question: "Can I pay monthly or annually?", answer: "Yes, you can choose to be billed monthly or annually. We often provide a discount for annual commitments." },
+    { question: "Can I pay monthly or annually?", answer: "Yes, you can choose to be billed monthly or annually. Annual billing terms are agreed in your written quote." },
     { question: "Are taxes included?", answer: "No, all fees are stated exclusive of taxes. You are responsible for paying all applicable taxes (such as sales tax or VAT) on your Subscription." },
     { question: "What is the refund policy?", answer: "If you request a refund within seven (7) days of a payment for a new Subscription or renewal, we will refund that payment." },
     { question: "What happens to my data if I cancel?", answer: "Your data is retained in a locked state for 30 days. After 30 days, it is permanently deleted. You should export your data before cancelling." },
-    { question: "Do you support teams outside Pakistan?", answer: "Yes, we support businesses internationally. Our data is securely hosted in the Asia region to serve a global customer base." },
+    { question: "Do you work with businesses in other countries?", answer: "Yes. Ovelah runs in the browser, so teams in any country can use it. Our data is hosted on Cloudflare infrastructure." },
     { question: "Is support included?", answer: "Yes, support is available 24/7 upon request for all active customers." }
   ];
 
@@ -68,7 +68,7 @@ export default function PricingPage() {
                 Pricing that scales with your operations.
               </h1>
               <p className="text-lg leading-relaxed text-[#6b6b6b]">
-                Start at $100 per month. Your final price reflects your team size, job volume and onboarding needs. No arbitrary tiers.
+                Start at $49 per month. Your final price reflects your team size, job volume and onboarding needs. No arbitrary tiers.
               </p>
               <p className="mt-4 text-sm text-[#6b6b6b] font-medium">1 month free. No card required.</p>
             </div>

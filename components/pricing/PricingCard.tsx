@@ -44,7 +44,7 @@ export default function PricingCard() {
           <div>
             <h2 className="text-xl font-semibold text-[#0a0a0a] mb-2">Ovelah Platform</h2>
             <div className="flex items-baseline gap-2">
-              <span className="text-5xl font-semibold tracking-tight text-[#0a0a0a]">$100</span>
+              <span className="text-5xl font-semibold tracking-tight text-[#0a0a0a]">$49</span>
               <span className="text-lg text-[#6b6b6b] font-medium">/month</span>
             </div>
             <p className="text-sm text-[#6b6b6b] mt-2">
@@ -56,7 +56,7 @@ export default function PricingCard() {
               Request a Custom Quote
             </Link>
             <Link href="/contact" className="flex items-center justify-center min-h-[44px] w-full rounded-md border border-[#e7e7e4] bg-white px-6 text-sm font-semibold text-[#0a0a0a] transition-colors hover:bg-[#f7f7f5] outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#0b1f3a]">
-              Start free trial
+              Request a free trial
             </Link>
           </div>
         </div>
@@ -68,7 +68,7 @@ export default function PricingCard() {
             "Quotation & invoice engine",
             "Expenses & asset tracking",
             "Reporting",
-            "Encrypted data hosted in the Asia region",
+            "Encrypted data hosted",
             "Support 24/7 upon request",
             siteConfig.pricing.includedUsers,
             siteConfig.pricing.includedLocations

@@ -27,7 +27,7 @@ export default function Hero() {
               href="/contact"
               className="w-full sm:w-auto rounded-md border border-[#e7e7e4] bg-white px-7 py-3.5 text-sm font-semibold text-[#0a0a0a] transition-all hover:border-[#0b1f3a] hover:text-[#0b1f3a]"
             >
-              Start 1 Month Free Trial
+              Request a Free Trial
             </Link>
           </div>
         </div>
@@ -50,7 +50,7 @@ export default function Hero() {
               <svg className="h-3 w-3 shrink-0 text-[#0b1f3a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
               </svg>
-              <span className="truncate whitespace-nowrap">Infinity Dashboard - Ovelah</span>
+              <span className="truncate whitespace-nowrap">Ovelah Dashboard</span>
               {/* Close Tab Icon */}
               <svg className="ml-auto sm:ml-4 h-3 w-3 shrink-0 cursor-pointer text-gray-400 hover:text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
@@ -70,7 +70,7 @@ export default function Hero() {
             {/* URL Input */}
             <div className="flex flex-1 min-w-0 items-center gap-2 rounded-md bg-[#f3f4f6] px-3 py-1.5 text-[10px] sm:text-sm text-[#6b6b6b]">
               <svg className="h-3 sm:h-3.5 w-3 sm:w-3.5 shrink-0 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
-              <span className="truncate whitespace-nowrap">https://app.ovelah.com/dashboard/infinity</span>
+              <span className="truncate whitespace-nowrap">ovelah.com</span>
             </div>
           </div>
 
@@ -78,7 +78,7 @@ export default function Hero() {
           <div className="bg-[#f7f7f5]">
             <img
               src="/dashboard.png" 
-              alt="Ovelah ERP Dashboard Interface"
+              alt="Ovelah dashboard showing jobs, quotations and invoices"
               className="block h-auto w-full"
             />
           </div>

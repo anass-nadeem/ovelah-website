@@ -8,7 +8,7 @@ export const siteConfig = {
   testimonials: {
     infinityQuote: "Ovelah fundamentally changed how we track our field engineers. We no longer lose money on forgotten parts, and our clients appreciate the transparent service histories.",
     infinityAuthorName: "Abdullah",
-    infinityAuthorTitle: "Operation Manager",
+    infinityAuthorTitle: "Infinity Engineering Solutions",
   },
   security: {
     encryptedData: true, 
@@ -25,7 +25,6 @@ export const siteConfig = {
     
     // Timeline items. Add new ones or change status to 'planned'/'completed'
     timeline: [
-      { date: "[ADD DATE]", title: "Platform live in daily operations", status: "completed" },
       // { date: "[ADD DATE]", title: "Public Launch", status: "planned" }
     ],
     
