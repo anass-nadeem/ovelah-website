@@ -156,7 +156,7 @@ export default function AboutPage() {
                   What we are building toward.
                 </h2>
                 <div className="relative border-l border-[#e7e7e4] ml-3 space-y-12">
-                  {about.timeline.map((item, idx) => (
+                  {about.timeline.map((item: any, idx: number) => (
                     <div key={idx} className="relative pl-8">
                       {/* Timeline Dot */}
                       <div className={`absolute left-[-5px] top-1.5 h-2.5 w-2.5 rounded-full ${item.status === 'completed' ? 'bg-[#0b1f3a]' : 'bg-white border-2 border-[#e7e7e4]'}`}></div>
