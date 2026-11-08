@@ -44,7 +44,12 @@ export default function PricingCard() {
           <div>
             <h2 className="text-xl font-semibold text-[#0a0a0a] mb-2">Ovelah Platform</h2>
             <div className="flex items-baseline gap-2">
-              <span className="text-5xl font-semibold tracking-tight text-[#0a0a0a]">$49</span>
+              {/* "From" is smaller (text-xl) and lighter color/weight */}
+              <span className="text-xl font-medium text-[#6b6b6b]">From</span>
+              
+              {/* "£49" remains large (text-5xl) and bold */}
+              <span className="text-5xl font-semibold tracking-tight text-[#0a0a0a]">£49</span>
+              
               <span className="text-lg text-[#6b6b6b] font-medium">/month</span>
             </div>
           </div>
