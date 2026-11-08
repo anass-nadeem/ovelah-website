@@ -22,7 +22,7 @@ export default function PricingPage() {
     offers: {
       "@type": "AggregateOffer",
       lowPrice: "49",
-      priceCurrency: "USD"
+      priceCurrency: "GBP"
     }
   };
 

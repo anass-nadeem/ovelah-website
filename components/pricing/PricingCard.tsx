@@ -47,9 +47,6 @@ export default function PricingCard() {
               <span className="text-5xl font-semibold tracking-tight text-[#0a0a0a]">$49</span>
               <span className="text-lg text-[#6b6b6b] font-medium">/month</span>
             </div>
-            <p className="text-sm text-[#6b6b6b] mt-2">
-              {isAnnual ? "Billed annually." : "Billed monthly."} Final price confirmed in a custom quote. Taxes extra.
-            </p>
           </div>
           <div className="flex flex-col gap-3 shrink-0 md:w-56">
             <Link href="/contact?interest=pricing" className="flex items-center justify-center min-h-[44px] w-full rounded-md bg-[#0b1f3a] px-6 text-sm font-semibold text-white transition-colors hover:bg-[#0a1526] outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#0b1f3a]">
@@ -70,6 +67,7 @@ export default function PricingCard() {
             "Reporting",
             "Encrypted data hosted",
             "Support 24/7 upon request",
+            "All personal and business data processed by Ovelah is managed securely and transparently in strict compliance with the UK Data (Use and Access) Act 2025.",
             siteConfig.pricing.includedUsers,
             siteConfig.pricing.includedLocations
           ].map((feature, i) => feature ? (

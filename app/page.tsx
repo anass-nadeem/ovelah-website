@@ -36,8 +36,8 @@ export default function Home() {
     operatingSystem: "Web",
     offers: {
       "@type": "Offer",
-      price: "100",
-      priceCurrency: "USD"
+      price: "49",
+      priceCurrency: "GBP"
     }
   };
 
