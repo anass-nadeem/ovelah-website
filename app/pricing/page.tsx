@@ -9,7 +9,7 @@ import FaqAccordion from "@/components/home/FaqAccordion";
 
 export const metadata = constructMetadata({
   title: "Pricing | Ovelah",
-  description: "Ovelah pricing scales with your operations, starting from $49 per month. Get a custom quote based on your team size and job volume.",
+  description: "Ovelah pricing scales with your operations, starting from £49 per month. Get a custom quote based on your team size and job volume.",
   url: "https://ovelah.com/pricing",
 });
 
@@ -68,7 +68,7 @@ export default function PricingPage() {
                 Pricing that scales with your operations.
               </h1>
               <p className="text-lg leading-relaxed text-[#6b6b6b]">
-                Start at $49 per month. Your final price reflects your team size, job volume and onboarding needs. No arbitrary tiers.
+                Start at £49 per month. Your final price reflects your team size, job volume and onboarding needs. No arbitrary tiers.
               </p>
               <p className="mt-4 text-sm text-[#6b6b6b] font-medium">1 month free. No card required.</p>
             </div>
