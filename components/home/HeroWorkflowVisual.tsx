@@ -45,7 +45,7 @@ export default function HeroWorkflowVisual({ imageSrc }: HeroWorkflowVisualProps
           <h3 className="mb-1 font-semibold text-[#0a0a0a]">JOB-1042</h3>
           <p className="mb-4 text-sm font-medium text-[#0a0a0a]">Chiller service and repair</p>
           <div className="mt-auto space-y-2 border-t border-[#e7e7e4] pt-3 text-xs text-[#6b6b6b]">
-            <p><span className="font-medium text-[#0a0a0a]">Client:</span> Northgate Retail (example)</p>
+            <p><span className="font-medium text-[#0a0a0a]">Client:</span> Northgate Retail</p>
             <p><span className="font-medium text-[#0a0a0a]">Site:</span> Manchester – Arndale store</p>
           </div>
         </div>
@@ -106,7 +106,7 @@ export default function HeroWorkflowVisual({ imageSrc }: HeroWorkflowVisualProps
       </div>
       
       <p className="mt-6 text-xs text-[#6b6b6b]">
-        Example data. Not a real client.
+        Example data.
       </p>
     </div>
   );
