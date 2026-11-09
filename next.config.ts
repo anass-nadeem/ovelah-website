@@ -19,6 +19,11 @@ const nextConfig: NextConfig = {
         destination: '/platform',
         permanent: true,
       },
+      {
+        source: '/industries/construction',
+        destination: '/industries/mep-contractors',
+        permanent: true,
+      },
     ]
   },
 };

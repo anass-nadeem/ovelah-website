@@ -15,7 +15,7 @@ export default function Footer() {
               <span className="text-lg font-bold tracking-tight text-[#0a0a0a]">Ovelah</span>
             </Link>
             <p className="max-w-sm text-sm leading-relaxed text-[#6b6b6b]">
-              Business software for companies that run on real operations. Bringing customers, locations, jobs, and financial records into one connected system.
+              Job, quotation and invoice management software for HVAC and engineering contractors. Bringing customers, locations, jobs, and financial records into one connected system.
             </p>
           </div>
 
@@ -23,8 +23,10 @@ export default function Footer() {
           <div>
             <h4 className="mb-4 text-xs font-semibold uppercase tracking-wider text-[#0a0a0a]">Product</h4>
             <ul className="flex flex-col gap-3">
-              <li><Link href="/product" className="text-sm text-[#6b6b6b] hover:text-[#0a0a0a]">Platform</Link></li>
-              <li><Link href="/platform" className="text-sm text-[#6b6b6b] hover:text-[#0a0a0a]">Platform Architecture</Link></li>
+              <li><Link href="/platform" className="text-sm text-[#6b6b6b] hover:text-[#0a0a0a]">Platform</Link></li>
+              <li><Link href="/solutions" className="text-sm text-[#6b6b6b] hover:text-[#0a0a0a]">Solutions Overview</Link></li>
+              <li><Link href="/solutions/job-management" className="text-sm text-[#6b6b6b] hover:text-[#0a0a0a]">Job Management</Link></li>
+              <li><Link href="/solutions/quotation-billing" className="text-sm text-[#6b6b6b] hover:text-[#0a0a0a]">Quotation & Billing</Link></li>
             </ul>
           </div>
 
@@ -32,10 +34,10 @@ export default function Footer() {
           <div>
             <h4 className="mb-4 text-xs font-semibold uppercase tracking-wider text-[#0a0a0a]">Industries</h4>
             <ul className="flex flex-col gap-3">
-              <li><Link href="/industries/engineering-maintenance" className="text-sm text-[#6b6b6b] hover:text-[#0a0a0a]">Engineering & Maintenance</Link></li>
+              <li><Link href="/industries/engineering-maintenance" className="text-sm text-[#6b6b6b] hover:text-[#0a0a0a]">Engineering</Link></li>
               <li><Link href="/industries/hvac-electrical" className="text-sm text-[#6b6b6b] hover:text-[#0a0a0a]">HVAC & Electrical</Link></li>
               <li><Link href="/industries/facility-management" className="text-sm text-[#6b6b6b] hover:text-[#0a0a0a]">Facility Management</Link></li>
-              <li><Link href="/industries/construction" className="text-sm text-[#6b6b6b] hover:text-[#0a0a0a]">Construction</Link></li>
+              <li><Link href="/industries/mep-contractors" className="text-sm text-[#6b6b6b] hover:text-[#0a0a0a]">MEP Contractors</Link></li>
             </ul>
           </div>
 

@@ -245,7 +245,7 @@ export default function Home() {
                 { title: "Engineering & Maintenance", desc: "Manage service contracts without the chaos.", link: "/industries/engineering-maintenance" },
                 { title: "HVAC & Electrical", desc: "Track equipment and quote accurately.", link: "/industries/hvac-electrical" },
                 { title: "Facility Management", desc: "Organize requests across multi-building campuses.", link: "/industries/facility-management" },
-                { title: "Construction", desc: "Keep project expenses tied to the job site.", link: "/industries/construction" }
+                { title: "Mep-Contractors", desc: "Keep project expenses tied to the job site.", link: "/industries/construction" }
               ].map((ind, i) => (
                 <div key={i} className="rounded-xl border border-[#e7e7e4] p-8 flex flex-col justify-between">
                   <div>
@@ -358,7 +358,7 @@ export default function Home() {
               {siteConfig.security.hostedInAsia && (
                 <div className="flex items-center gap-2">
                   <svg className="w-5 h-5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" /></svg>
-                  Hosted On Secured Platform (Cloudflare)
+                  Hosted On Cloudflare
                 </div>
               )}
               {siteConfig.security.soc2Certified && (
@@ -412,7 +412,7 @@ export default function Home() {
             </p>
             <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Link href="/contact" className="min-h-[44px] w-full rounded-md bg-[#0b1f3a] px-8 py-3 text-center text-sm font-medium text-white transition-colors hover:bg-[#0a1526] outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#0b1f3a] sm:w-auto">
-                Request a Demo
+                Book a Demo
               </Link>
               <Link href="/contact" className="min-h-[44px] w-full rounded-md border border-[#e7e7e4] bg-white px-8 py-3 text-center text-sm font-medium text-[#0a0a0a] transition-colors hover:bg-[#f7f7f5] outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#0b1f3a] sm:w-auto">
                 Request a free trial

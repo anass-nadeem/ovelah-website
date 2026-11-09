@@ -21,9 +21,9 @@ export default function IndustriesPage() {
       slug: "/industries/facility-management"
     },
     {
-      title: "Construction & Contracting",
+      title: "Mep-Contractors",
       desc: "Keep project expenses, labor tracking, and phased invoicing connected to specific job sites to ensure projects remain profitable.",
-      slug: "/industries/construction"
+      slug: "/industries/mep-contractors"
     }
   ];
 

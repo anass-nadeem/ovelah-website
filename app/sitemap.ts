@@ -13,7 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/industries/engineering-maintenance',
     '/industries/hvac-electrical',
     '/industries/facility-management',
-    '/industries/construction',
+    '/industries/mep-contractors',
     '/customers',
     '/clients/infinity-engineering-solutions',
     '/about',

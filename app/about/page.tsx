@@ -255,7 +255,7 @@ export default function AboutPage() {
             </h2>
             <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Link href="/contact" className="min-h-[44px] w-full rounded-md bg-[#0b1f3a] px-8 py-3 text-center text-sm font-medium text-white transition-colors hover:bg-[#0a1526] outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#0b1f3a] sm:w-auto flex items-center justify-center">
-                Request a Demo
+                Book a Demo
               </Link>
               <Link href="/contact" className="min-h-[44px] w-full rounded-md border border-[#e7e7e4] bg-white px-8 py-3 text-center text-sm font-medium text-[#0a0a0a] transition-colors hover:bg-[#f7f7f5] outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#0b1f3a] sm:w-auto flex items-center justify-center">
                 Request a free trial

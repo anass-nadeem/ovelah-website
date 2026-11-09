@@ -55,7 +55,7 @@ export default function PricingCard() {
           </div>
           <div className="flex flex-col gap-3 shrink-0 md:w-56">
             <Link href="/contact?interest=pricing" className="flex items-center justify-center min-h-[44px] w-full rounded-md bg-[#0b1f3a] px-6 text-sm font-semibold text-white transition-colors hover:bg-[#0a1526] outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#0b1f3a]">
-              Request a Custom Quote
+              Book a Demo
             </Link>
             <Link href="/contact" className="flex items-center justify-center min-h-[44px] w-full rounded-md border border-[#e7e7e4] bg-white px-6 text-sm font-semibold text-[#0a0a0a] transition-colors hover:bg-[#f7f7f5] outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#0b1f3a]">
               Request a free trial
