@@ -7,11 +7,12 @@ import { constructMetadata } from "@/lib/seo";
 import type { Organization, SoftwareApplication, FAQPage } from "schema-dts";
 import WorkflowStepper from "@/components/home/WorkflowStepper";
 import FaqAccordion from "@/components/home/FaqAccordion";
+import HeroWorkflowVisual from "@/components/home/HeroWorkflowVisual";
 import { siteConfig } from "@/lib/config/placeholders";
 
 export const metadata = constructMetadata({
-  title: "Ovelah | Job, Quotation & Invoice Software",
-  description: "Ovelah is business operations management software for service and maintenance companies. It connects clients, locations, jobs, quotations and invoices in one system.",
+  title: "Maintenance Management Software for HVAC and Engineering Contractors | Ovelah",
+  description: "Manage clients, sites, jobs, quotations and invoices in one system. Ovelah is built for HVAC, electrical and engineering maintenance companies.",
   url: "https://ovelah.com/",
 });
 
@@ -75,49 +76,39 @@ export default function Home() {
       <main className="bg-[#fcfcfb] pt-32 md:pt-40 selection:bg-[#0b1f3a] selection:text-white">
         
         {/* 2. HERO */}
-        <section className="relative overflow-hidden pb-20 md:pb-32">
+        <section className="relative overflow-hidden pb-[80px] lg:pb-[112px]">
           <Container>
-            <div className="mx-auto max-w-4xl text-center">
-              <p className="mb-6 text-xs font-bold uppercase tracking-[0.2em] text-[#6b6b6b]">
-                Business Operations Software
-              </p>
-              <h1 className="mb-8 text-4xl sm:text-5xl md:text-6xl lg:text-[64px] font-semibold tracking-tight text-[#0a0a0a] leading-[1.1]">
-                Run every job, quote and invoice from one connected system.
-              </h1>
-              <p className="mx-auto mb-10 max-w-2xl text-lg leading-relaxed text-[#6b6b6b] md:text-xl">
-                Ovelah is business operations management software for service and maintenance companies. It connects clients, locations, jobs, quotations and invoices in one system.
-              </p>
-              <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-                <Link href="/contact" className="min-h-[44px] w-full rounded-md bg-[#0b1f3a] px-8 py-3 text-center text-sm font-medium text-white transition-colors hover:bg-[#0a1526] outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#0b1f3a] sm:w-auto">
-                  Request a Demo
-                </Link>
-                <Link href="/contact" className="min-h-[44px] w-full rounded-md border border-[#e7e7e4] bg-white px-8 py-3 text-center text-sm font-medium text-[#0a0a0a] transition-colors hover:bg-[#f7f7f5] outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#0b1f3a] sm:w-auto">
-                  Request a free trial
-                </Link>
+            <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-12 lg:gap-8">
+              
+              {/* Hero Copy (Left) */}
+              <div className="w-full lg:w-5/12 text-left">
+                <p className="mb-6 text-xs font-bold uppercase tracking-[0.2em] text-[#6b6b6b]">
+                  For HVAC and engineering contractors
+                </p>
+                <h1 className="mb-6 text-[40px] sm:text-[48px] lg:text-[56px] font-semibold tracking-tight text-[#0a0a0a] leading-[1.1] max-w-[14ch] sm:max-w-[18ch] lg:max-w-full">
+                  Jobs, quotes and invoices for HVAC and engineering contractors, in one system.
+                </h1>
+                <p className="mb-10 text-lg leading-relaxed text-[#6b6b6b]">
+                  Ovelah links your clients, sites, jobs, quotations and invoices, so nothing lives in spreadsheets and WhatsApp.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 mb-4">
+                  <Link href="/contact" className="min-h-[44px] flex items-center justify-center w-full sm:w-auto rounded-md bg-[#0b1f3a] px-8 py-3 text-sm font-medium text-white transition-colors hover:bg-[#0a1526] outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#0b1f3a]">
+                    Book a demo
+                  </Link>
+                  <Link href="#how-it-works" className="min-h-[44px] flex items-center justify-center w-full sm:w-auto rounded-md border border-[#e7e7e4] bg-white px-8 py-3 text-sm font-medium text-[#0a0a0a] transition-colors hover:bg-[#f7f7f5] outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#0b1f3a]">
+                    See how it works
+                  </Link>
+                </div>
+                <p className="text-xs text-[#6b6b6b]">
+                  We set it up for your business. 1-month free trial.
+                </p>
               </div>
-              <p className="mt-4 text-xs text-[#6b6b6b]">1 month free. No card required.</p>
-            </div>
 
-            {/* Hero Visual */}
-            <div className="mt-16 md:mt-24 relative max-w-5xl mx-auto">
-              <div className="absolute inset-0 -z-10 bg-gradient-to-b from-[#0b1f3a]/5 to-transparent blur-3xl rounded-full translate-y-12"></div>
-              <div className="overflow-hidden rounded-xl border border-[#e7e7e4] bg-white shadow-2xl shadow-black/5">
-                <div className="flex items-center gap-2 border-b border-[#e7e7e4] bg-[#fcfcfb] px-4 py-3">
-                  <div className="h-2.5 w-2.5 rounded-full bg-[#e7e7e4]" />
-                  <div className="h-2.5 w-2.5 rounded-full bg-[#e7e7e4]" />
-                  <div className="h-2.5 w-2.5 rounded-full bg-[#e7e7e4]" />
-                </div>
-                <div className="relative aspect-[16/9] w-full bg-white">
-                  <Image 
-                    src="/dash-hero.png" 
-                    alt="Ovelah dashboard showing jobs, quotations and balances" 
-                    fill 
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 1000px"
-                    className="object-cover object-top" 
-                    priority 
-                  />
-                </div>
+              {/* Hero Visual (Right) */}
+              <div className="w-full lg:w-7/12">
+                <HeroWorkflowVisual />
               </div>
+
             </div>
           </Container>
         </section>
@@ -126,13 +117,12 @@ export default function Home() {
         <section className="border-y border-[#e7e7e4] bg-white py-12">
           <Container>
             <div className="flex flex-col md:flex-row items-center justify-center gap-6 text-center md:text-left">
-              <p className="text-sm font-medium text-[#6b6b6b]">In daily use at</p>
+              <p className="text-sm font-medium text-[#6b6b6b]">In daily use at an engineering and maintenance company</p>
               <div className="relative w-32 h-10">
                 <Image src="/infinity-logo.png" alt="Infinity Engineering Solutions" fill sizes="128px" className="object-contain" loading="lazy" />
               </div>
-              <p className="text-sm font-medium text-[#6b6b6b] border-l border-[#e7e7e4] pl-6 hidden md:block">HVAC & Electrical maintenance</p>
-              <Link href="/clients/infinity-engineering-solutions" className="text-sm font-semibold text-[#0b1f3a] hover:underline underline-offset-4 outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#0b1f3a] rounded-sm md:ml-4">
-                View Case Study →
+              <Link href="/clients/infinity-engineering-solutions" className="text-sm font-semibold text-[#0b1f3a] hover:underline underline-offset-4 outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#0b1f3a] rounded-sm md:ml-4 border-l-0 md:border-l border-[#e7e7e4] md:pl-6">
+                View case study →
               </Link>
             </div>
           </Container>
@@ -161,7 +151,7 @@ export default function Home() {
               <div className="rounded-2xl border border-[#e7e7e4] bg-white p-8">
                 <svg className="w-6 h-6 text-[#6b6b6b] mb-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                 <h3 className="mb-3 text-lg font-semibold text-[#0a0a0a]">Invoices that wait</h3>
-                <p className="text-[#6b6b6b] leading-relaxed">Completed work is billed late because the parts and labor details are hard to gather.</p>
+                <p className="text-[#6b6b6b] leading-relaxed">Completed work is billed late because the parts and labour details are hard to gather.</p>
               </div>
             </div>
             
@@ -172,7 +162,7 @@ export default function Home() {
         </section>
 
         {/* 5. THE WORKFLOW */}
-        <section className="bg-white border-y border-[#e7e7e4] py-24 md:py-32">
+        <section id="how-it-works" className="bg-white border-y border-[#e7e7e4] py-24 md:py-32">
           <Container>
             <div className="mx-auto max-w-3xl text-center mb-16">
               <h2 className="text-3xl font-semibold tracking-tight text-[#0a0a0a] md:text-4xl mb-4">
@@ -211,7 +201,7 @@ export default function Home() {
               <div className="md:col-span-4 rounded-2xl border border-[#e7e7e4] bg-white p-8 sm:p-12 transition-shadow hover:shadow-md">
                 <svg className="w-6 h-6 text-[#0b1f3a] mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
                 <h3 className="text-xl font-semibold text-[#0a0a0a] mb-2">Quotations</h3>
-                <p className="text-[#6b6b6b]">Estimate labor and parts against the actual job.</p>
+                <p className="text-[#6b6b6b]">Estimate labour and parts against the actual job.</p>
               </div>
 
               {/* Invoices (Large) */}
